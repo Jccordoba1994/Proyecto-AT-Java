@@ -1,11 +1,13 @@
 *{
     margin: 0%;
     padding: 0%;
-    /* box-sizing: border-box; */
+    /* box-sizing: border-box; */;
+
 }
 
 header{
     display: grid;
+    overflow: hidden;
     height: 55px;
     width: 100%;
     grid-template-columns: 1fr;
@@ -103,9 +105,12 @@ header{
 .titulo1{
     text-align: center;
     background-color: green;
-    font-size: 20px;
+    font-size: 25px;
     grid-area: titulo1;
     min-width: 360px;
+    font-weight: bold;
+    text-transform: capitalize;
+
 }
 
 .video1{
@@ -214,9 +219,11 @@ header{
 
 .texto {
     grid-area: texto;
-    width: 100%;
+    width: 75%;
     text-align: center;
     background-image: linear-gradient(45deg, green 50%, gainsboro 50%);
+    border-radius: 15px;
+    margin-left: 12%;
 }
 
 .texto a{
@@ -227,10 +234,11 @@ header{
     background-color: gainsboro;
     border-radius: 15px;
     text-decoration: none;
+
 }
 
 .texto:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -369,6 +377,7 @@ header{
 
 .texto {
     margin-bottom: 74px;
+    transform: scale(1.3);
 }
 .texto a{
     font-size: 40px;
