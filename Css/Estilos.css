@@ -75,7 +75,18 @@ header{
     cursor: pointer;
 }
 
-.fondo{
+.titulo1{
+    text-align: center;
+    background-color: green;
+    font-size: 25px;
+    grid-area: titulo1;
+    min-width: 360px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.fondoindex{
     background-color: gray;
     display: grid;
     min-height: 400px;
@@ -100,22 +111,6 @@ header{
 .portada:hover { 
     transform: scale(1.05);
     transition: all 0.5s;
-}
-
-.titulo1{
-    text-align: center;
-    background-color: green;
-    font-size: 25px;
-    grid-area: titulo1;
-    min-width: 360px;
-    font-weight: bold;
-    text-transform: capitalize;
-
-}
-
-.video1{
-    padding: 15px;
-    display: inline-block;
 }
 
 .somos{
@@ -151,7 +146,6 @@ header{
     "training"
     "texto";
 }
-
 
 .futbol{
     grid-area: futbol;
@@ -241,6 +235,41 @@ header{
     transform: scale(1.03);
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.fondocontact {
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas:
+    "consulta"
+    "contacto"
+    "trabajanosotros";
+}
+
+.consulta {
+    grid-area: consulta;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    grid-area: contacto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trabajanosotros{
+    grid-area: trabajanosotros;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .findo{
@@ -339,6 +368,18 @@ header{
     display: none;
 }
 
+.acercade{
+    display: none;
+    }
+    
+.ayuda {
+    display: none;
+}
+
+.email {
+    display: none;
+}
+
 .redes{
     width: 100%;
     padding: auto;
@@ -386,6 +427,7 @@ header{
 }
 
 @media only screen and (min-width: 600px) {
+
 header {
     height: 220px;
     width: 100%;
@@ -395,6 +437,7 @@ header {
     }
     
 .somos {
+    margin: 20px;
     font-size: 10,5px;
     }
     
@@ -411,11 +454,13 @@ header {
     font-size: 25px;
 }
 
-
-.somos{
-    margin: 20px;
+.fondocontact{
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "consulta trabajanosotros"
+    "contacto trabajanosotros";
 }
-
 
 @media only screen and (min-width: 750px) {
 .portada {
