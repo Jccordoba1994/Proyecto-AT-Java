@@ -1,0 +1,390 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+}
+
+header{
+    display: grid;
+    height: 55px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    background-color: rgb(24, 61, 155);
+    background-position: center;
+    background-attachment: fixed;
+    gap: 0% 0%;
+    grid-template-areas: 
+    "Burguer logo .";
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+    background-position: center;
+    grid-area: logo;
+}
+
+
+.lavi{
+    text-align: center;
+
+}
+
+.menu{ 
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+}
+
+.tresrayas { 
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid rgba(20, 20, 213, 0.786);
+    grid-area: Burguer;
+}
+
+
+.menu ul li {
+    list-style: none;
+    display: none;
+    text-decoration: none;
+}
+
+.menu ul li a{
+    height: 15px;
+    width: 150px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: green;
+    float: left;
+}
+
+.menu:hover ul li{
+    display: block;
+    cursor: pointer;
+}
+
+.fondo{
+    background-color: gray;
+    display: grid;
+    min-height: 400px;
+    min-width: 360px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 0% 0%;
+    grid-template-areas:
+    "titulo 1"
+    "portada"
+    "somos" ;
+}
+
+.portada{
+    padding: 15px;
+    display: block;
+    border-radius: 20px;
+    grid-area: portada;
+}
+
+
+.titulo1{
+    text-align: center;
+    background-color: green;
+    font-size: 20px;
+    grid-area: titulo1;
+    min-width: 360px;
+}
+
+.video1{
+    padding: 15px;
+    display: inline-block;
+}
+
+.somos{
+    font-size: 10px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+    width: auto;
+    font-weight: bold;
+    padding: 20px;
+    /* margin-top: 80px; */
+    justify-content: center;
+    grid-area: somos;
+}
+
+.galeriaservicios{
+    display: grid;
+    height: 642px;
+    width: 100%;
+    background-color: gray;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 120px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px 0% ;
+    box-sizing: border-box;
+    grid-template-areas: 
+    "futbol" 
+    "tenis"
+    "natacion" 
+    "training"
+    "texto";
+}
+
+
+.futbol{
+    grid-area: futbol;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-image: url(../multimedia/Futbol.jpeg);
+    background-position: center;
+}
+
+
+.tenis{
+    grid-area: tenis;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background-image: url(../Multimedia/Tenis.jpg);
+    background-position: center;
+    box-shadow: 0 0 5px #333;
+}
+
+
+.natacion{
+    grid-area: natacion;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background-image: url(../Multimedia/Natacion.jpeg);
+    background-position: center;
+}
+
+
+.training{
+    grid-area: training;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background-image: url(../Multimedia/Training.jpeg);
+    background-position: center;
+}
+
+
+.texto {
+    grid-area: texto;
+    width: 100%;
+    text-align: center;
+}
+
+.texto a{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: green;
+    background-color: gainsboro;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+
+.findo{
+    display: grid;
+    background-color: rgb(24, 61, 155);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    line-height: 2;
+    grid-template-areas: 
+    "acercade ayuda redes";
+    
+}
+
+.acercade div a{
+    grid-area: acercade;
+    color: white;
+}
+
+.ayuda{
+    padding-left: 90px;
+    grid-area: ayuda;
+}
+.ayuda div a{
+    color: white;
+}
+
+.redes{
+    display: grid; 
+    grid-template-columns: 70px 70px; 
+    grid-template-rows: 50px 50px 50px; 
+    gap: 0px 0px; 
+    justify-content: center;
+    grid-template-areas:
+    "facebook instagram whatsapp"
+    "email email email";
+    grid-area: redes;
+}
+
+.facebook{
+    grid-area: facebook;
+}
+
+.instagram{
+    grid-area: instagram;
+    color: white;
+}
+
+.whatsapp{
+    grid-area: whatsapp;
+}
+.email{
+    grid-area: email;
+
+}
+
+footer a img {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+.lavi{
+    display: none;
+}
+.acercade{
+display: none;
+}
+
+.ayuda {
+    display: none;
+}
+
+.email {
+    display: none;
+}
+
+.findo {
+    height: 60px;
+}
+}
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+
+header{
+    width: 100%;
+}
+
+.lavi{
+    display: none;
+}
+
+.redes{
+    width: 100%;
+    padding: auto;
+}
+
+}
+
+@media only screen and (min-width: 500px) {
+
+.galeriaservicios {
+    grid-template-columns: 40% 20% 40% ;
+    grid-template-rows: 40% 20% 40%;
+    gap: 0% 0%;
+    padding: 20px;
+    grid-template-areas: 
+    "futbol . tenis"
+    "texto texto texto"
+    "natacion . training";
+    }
+    
+.futbol {
+    height: 200px;
+}
+
+.tenis {
+    height: 200px;
+}
+
+.natacion {
+    height: 200px;
+}
+
+.training {
+    height: 200px;
+}
+
+.texto {
+    margin-bottom: 74px;
+}
+.texto a{
+    font-size: 40px;
+    height: 40px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+header {
+    height: 220px;
+    width: 100%;
+    background-image: url(../multimedia/ATfondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    }
+    
+.somos {
+    font-size: 10,5px;
+    }
+    
+    
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-top: 40px;
+    }
+    
+}
+
+.lavi { 
+    font-size: 25px;
+}
+
+
+.somos{
+    margin: 20px;
+}
+
+
+@media only screen and (min-width: 750px) {
+.portada {
+    height: 250px;
+    width: 400px;
+}
+
+.lavi { 
+    font-size: 30px;
+}
+.somos {
+    font-size: 13px;
+}
+}
