@@ -187,7 +187,7 @@ h2 {
     grid-area: texto;
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(45deg, green 50%, gainsboro 50%);
+    background-image: linear-gradient(to right, green, gray, white );
     border-radius: 15px;
 }
 
@@ -218,9 +218,12 @@ h2 {
 }
 
 .consulta {
-    grid-area: consulta;
-    width: 100%;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    /* width: 100%; */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    background-image: linear-gradient(to top, white, gray, green);
 }
 
 .contacto {
@@ -231,9 +234,11 @@ h2 {
 
 .trabajanosotros{
     margin-top: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    background-image: linear-gradient(to top, white, gray, green);
 }
 
 .findo{
@@ -288,15 +293,24 @@ h2 {
 
 .instagram{
     grid-area: instagram;
-    color: white;
 }
+
 
 .whatsapp{
     grid-area: whatsapp;
 }
+
+.icon {
+    color: white;
+}
+
 .email{
     grid-area: email;
 
+}
+
+.email a {
+    color: white;
 }
 
 footer a img {
@@ -334,6 +348,10 @@ header{
     display: none;
 }
 
+.contacto {
+    display: block;
+}
+
 .acercade{
     display: none;
     }
@@ -354,6 +372,10 @@ header{
 }
 
 @media only screen and (min-width: 500px) {
+
+.contacto {
+    display: block;
+}
 
 .galeriaservicios {
     grid-template-columns: 40% 20% 40% ;
