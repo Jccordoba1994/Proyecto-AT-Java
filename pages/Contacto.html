@@ -98,27 +98,53 @@
             <div class="contacto-fila row">
                 <div class="col-sm-12 col-md-6">
                     <h3 class="consulta">consultas</h3>
-                    <form class="contacto"> 
-                        <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
-                        <label for="Nombre y apellido"> </label>
-                        <input type="number" name="Teléfono" placeholder="Teléfono" required>
-                        <label for="Teléfono"></label>
-                        <input type="mail" name="Correo Electrónico" placeholder="Correo Electrónico" required>
-                        <label for="Correo Electrónico"></label>
-                        <p>¿Desea recibir Newsletter? <input type= "checkbox">
-                        <textarea name="comentarios" id="comentarios" cols="35" rows="10" placeholder="Te escuchamos " required></textarea>
-                        <input type="reset"> <input type="submit">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="Nombre y Apellido"></label>
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombreyapellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono"></label>
+                            <input type="number" class="form-control" placeholder="Teléfono" id="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="comentarios" rows="10" placeholder="Ingrese su consulta" required></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> ¿Desea recibir información diaria?
+                            </label>
+                        </div>
+                        <button type="reset" class="btn btn-primary">Borrar</button> <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <h3 class="trabajanosotros">Trabaja con Nosotros</h3>
-                        <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" required>
-                        <label for="Nombre y apellido"> </label>
-                        <input type="mail" name="Correo Electrónico" placeholder="Correo Electrónico" required>
-                        <label for="Correo Electrónico"></label>
-                        <textarea name="comentarios" id="comentarios" cols="35" rows="10" placeholder="Contanos sobre vos" required></textarea>
-                        <h3>Carga tu CV</h3>
-                        <input type="file" required> 
-                        <input type="reset"> <input type="submit">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="Nombre y Apellido"></label>
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombreyapellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono"></label>
+                            <input type="number" class="form-control" placeholder="Teléfono" id="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="comentarios" rows="10" placeholder="Contanos sobre vos" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="cv">carga tu cv</label>
+                            <input type="file" class="form-control-file" id="cv">
+                        </div>
+                        <button type="reset" class="btn btn-primary">Borrar</button> <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
             </div>
