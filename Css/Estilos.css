@@ -95,8 +95,6 @@ h2 {
     height: auto;
 }
 
-.servicios .ser {
-}
 
 .galeriaservicios{
     display: grid;
@@ -217,25 +215,17 @@ h2 {
     text-transform: uppercase;
 }
 
+
 .consulta {
     margin-top: 20px;
-    /* width: 100%; */
     padding: 10px;
-    margin-bottom: 20px;
     font-size: 25px;
     background-image: linear-gradient(to top, white, gray, green);
 }
 
-.contacto {
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .trabajanosotros{
-    margin-top: 20px;
-    /* font-weight: bold; */
-    margin-bottom: 20px;
+    margin-top: 50px;
     padding: 10px;
     font-size: 25px;
     background-image: linear-gradient(to top, white, gray, green);
@@ -373,9 +363,6 @@ header{
 
 @media only screen and (min-width: 500px) {
 
-.contacto {
-    display: block;
-}
 
 .galeriaservicios {
     grid-template-columns: 40% 20% 40% ;
@@ -421,6 +408,7 @@ footer {
 
 @media only screen and (min-width: 600px) {
 
+
 header {
     height: 220px;
     width: 100%;
@@ -447,11 +435,9 @@ header {
     font-size: 25px;
 }
 
-.fondocontact{
-
-}
 
 @media only screen and (min-width: 750px) {
+
 .portada {
     height: 250px;
     width: 400px;
