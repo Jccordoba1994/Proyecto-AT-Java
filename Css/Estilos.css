@@ -231,6 +231,78 @@ h2 {
     background-image: linear-gradient(to top, white, gray, green);
 }
 
+.nosotros {
+    background-color: rgb(168, 166, 166);
+}
+
+.card {
+    width: 250px;
+}
+
+.card img {
+    height: 300px;
+    width: 250px;
+    border: 5px solid white;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.titulosnosotros {
+    background-image: linear-gradient(to top, white , gray, rgb(60, 60, 216));
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: 5px solid white;
+
+}
+
+.titulosnosotros:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.titulosnosotros1 {
+    background-image: linear-gradient(to top, white , gray, green);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: 5px solid white;
+}
+
+.titulosnosotros1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.titulosnosotros2 {
+    background-image: linear-gradient(to top, white , gray, orange);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: 5px solid white;
+}
+
+.titulosnosotros2:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
 .findo{
     display: grid;
     margin-top: 10px;
@@ -312,6 +384,29 @@ footer a img {
 .lavi{
     display: none;
 }
+
+.card {
+    height: 340px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.card img {
+    height: 200px;
+    width: 150px;
+    border: 5px solid white;
+}
+
+.card-title{
+    font-size: 15px;
+    padding: auto;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+}
+
 .acercade{
 display: none;
 }
@@ -336,6 +431,28 @@ header{
 
 .lavi{
     display: none;
+}
+
+.card {
+    height: 340px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.card img {
+    height: 200px;
+    width: 150px;
+    border: 5px solid white;
+}
+
+.card-title{
+    font-size: 15px;
+    padding: auto;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
 }
 
 .contacto {
@@ -433,6 +550,10 @@ header {
 
 .lavi { 
     font-size: 25px;
+}
+
+.card {
+    margin-top: 10px;
 }
 
 
