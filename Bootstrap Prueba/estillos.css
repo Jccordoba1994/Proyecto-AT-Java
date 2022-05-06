@@ -1,0 +1,85 @@
+.color {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.tit1{
+    background-color: gray;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tit2{
+    background-color: gray;
+    text-align: center;
+
+}
+
+.titulos {
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    background-position: bottom;
+    color: white;
+}
+
+
+.sietesoles {
+    background-image: url(Multimedia/Training5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.elbosque {
+    background-image: url(Multimedia/Training7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.lacuesta {
+    background-image: url(Multimedia/Training4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+.valle {
+    background-image: url(Multimedia/Training6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+.manantiales {
+    background-image: url(Multimedia/Training3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+.sancarlos {
+    background-image: url(Multimedia/Training.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border: 10px solid green;
+    border-radius: 10px;
+}
