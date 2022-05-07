@@ -6,10 +6,16 @@
 }
 
 body {
-    background-image: url(../Multimedia/ATfondo.jpg);
+    /* height: 100%; */
+    background-color: gainsboro;
     background-position: center;
     background-size: cover;
 }
+
+/* header {
+    height: auto;
+} */
+
 .carousel-inner img{
     background-size: cover;
     background-position: center;
@@ -33,6 +39,7 @@ body {
 .navbar {
     background-color: green;
     color: black;
+    /* margin-bottom: 20px; */
 }
 
 .navbar a {
@@ -48,11 +55,11 @@ body {
     background-color: green !important;
 }
 
-h2 {
+.titulo1 {
     text-align: center;
     text-transform: uppercase;
     background-color: springgreen;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 25px;
     color: white;
     background-color: green;
@@ -66,21 +73,27 @@ h2 {
     background-color: #000 !important;
 }
 
+main {
+    /* height: 400px; */
+}
+
 .nleft {
     background-color: #333;
-    height: 450px;
+    height: 300px;
+    width: 100%;
     background-image: url(../Multimedia/Portada\ AT.PNG);
     background-position: center;
     background-size: cover;
-    margin: 20px;
-    margin-right: 40px;
-    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* margin-left: 30px; */
 }
 .nright {
     background-color: rgb(24, 61, 155);
-    height: 450px;
-    padding: 30px;
-    margin: 20px;
+    /* height: 300px; */
+    /* padding: 30px; */
+    margin-top: 10px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -94,7 +107,6 @@ h2 {
     color: white;
     height: auto;
 }
-
 
 .galeriaservicios{
     display: grid;
@@ -122,7 +134,7 @@ h2 {
     height: 100px;
     border: 2px solid #000;
     border-radius: 20px;
-    background-image: url(../multimedia/Futbol.jpeg);
+    background-image: url(../Multimedia/Futbol.jpeg);
     background-position: center;
 }
 
@@ -303,13 +315,14 @@ h2 {
     cursor: pointer;
 }
 
-.findo{
-    display: grid;
+footer{
+    height: 300px;
+}
+
+.foter {
+    height: 200px;
     margin-top: 10px;
     background-color: rgb(24, 61, 155);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
     margin-top: 10px;
     box-sizing: border-box;
     color: white;
@@ -319,8 +332,6 @@ h2 {
     font-size: 15px;
     text-align: left;
     line-height: 2;
-    grid-template-areas: 
-    "acercade ayuda redes";
     
 }
 
@@ -381,6 +392,12 @@ footer a img {
 }
 
 @media only screen and (max-width: 360px) {
+
+body {
+    height: auto;
+    margin-bottom: 0%;
+}
+
 .lavi{
     display: none;
 }
@@ -416,11 +433,11 @@ display: none;
 }
 
 .email {
-    display: none;
+    /* display: none; */
 }
 
-.findo {
-    height: 60px;
+.foter {
+    height: 120px;
 }
 }
 @media only screen and (min-width: 360px) and (max-width: 600px) {
@@ -468,14 +485,35 @@ header{
 }
 
 .email {
-    display: none;
+    /* display: none; */
 }
 
 .redes{
     width: 100%;
     padding: auto;
 }
+}
 
+@media only screen and (min-width:470px) and (max-width:575px) {
+.nleft{
+    background-image: url(../Multimedia/Portada\ AT1.png);
+}
+}
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+
+.acercade{
+    font-size: 13px;
+}
+
+.ayuda {
+    font-size: 13px;
+}
+
+.email {
+    font-size: 13px;
+    margin-left: 20px;
+}
 }
 
 @media only screen and (min-width: 500px) {
@@ -527,7 +565,7 @@ footer {
 
 
 header {
-    height: 220px;
+    /* height: 220px; */
     width: 100%;
     background-image: url(../multimedia/ATfondo.jpg);
     background-position: center;
@@ -573,5 +611,19 @@ header {
 
 .findo {
     width: 100%;
+}
+}
+
+@media only screen and (min-width:800px) {
+
+.nleft {
+    background-image: url(../Multimedia/Portada\ AT1.png);
+}
+}
+
+@media only screen and (min-width:1000px) {
+.nleft {
+    background-position: top;
+    height: 400px;
 }
 }
