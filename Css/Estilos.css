@@ -1,629 +1,612 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    /* box-sizing: border-box; */;
-
+* {
+margin: 0%;
+padding: 0%;
+/* box-sizing: border-box; */
 }
 
 body {
-    /* height: 100%; */
-    background-color: gainsboro;
-    background-position: center;
-    background-size: cover;
+/* height: 100%; */
+background-color: gainsboro;
+background-position: center;
+background-size: cover;
 }
 
-/* header {
-    height: auto;
-} */
-
-.carousel-inner img{
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
-
+header .carousel-inner img {
+background-size: cover;
+background-position: center;
+height: 300px;
+width: 100%;
 }
 
-.logoat {
-    height: 150px !important;
-    width: 150px !important;
-    position: relative;
-    border-radius: 5px;
+header .logoat {
+height: 150px !important;
+width: 150px !important;
+position: relative;
+border-radius: 5px;
 }
 
-.lavi {
-    text-shadow: 0 0 10px #000;
-    font-style: italic;
+header .lavi {
+text-shadow: 0 0 10px #000;
+font-style: italic;
 }
 
 .navbar {
-    background-color: green;
-    color: black;
-    /* margin-bottom: 20px; */
+background-color: green;
+color: black;
+/* margin-bottom: 20px; */
 }
 
 .navbar a {
-    color: white !important;
-    text-transform: uppercase;
+color: white !important;
+text-transform: uppercase;
 }
 
 .navbar a:hover {
-    background-color: rgb(8, 95, 51);
+background-color: #085f33;
 }
 
 .navbar-brand:hover {
-    background-color: green !important;
+background-color: green !important;
 }
 
-.titulo1 {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: springgreen;
-    margin-top: 10px;
-    font-size: 25px;
-    color: white;
-    background-color: green;
+main .titulo1 {
+text-align: center;
+text-transform: uppercase;
+margin-top: 10px;
+font-size: 25px;
+color: white;
+background-color: green;
 }
 
-.btn-success {
-    background-color: springgreen;
+main .nleft {
+height: 300px;
+width: 100%;
+background-image: url("../Multimedia/Portada AT.png");
+background-position: center;
+background-size: cover;
+margin-bottom: 20px;
+margin-top: 10px;
+/* margin-left: 30px; */
 }
 
-.btn-success:active {
-    background-color: #000 !important;
+main .nright {
+background-color: #183d9b;
+/* height: 300px; */
+/* padding: 30px; */
+margin-top: 10px;
+margin-bottom: 20px;
+color: white;
 }
 
-main {
-    /* height: 400px; */
+main .nleft:hover {
+-webkit-transform: scale(1.05);
+        transform: scale(1.05);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
 }
 
-.nleft {
-    background-color: #333;
-    height: 300px;
-    width: 100%;
-    background-image: url(../Multimedia/Portada\ AT.PNG);
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    /* margin-left: 30px; */
-}
-.nright {
-    background-color: rgb(24, 61, 155);
-    /* height: 300px; */
-    /* padding: 30px; */
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
+main .actividades {
+background-color: pink;
+color: white;
+height: auto;
 }
 
-.nleft:hover { 
-    transform: scale(1.05);
-    transition: all 0.5s;
+main .titulosnosotros {
+background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#3c3cd8));
+background-image: linear-gradient(to top, white, gray, #3c3cd8);
+text-transform: uppercase;
+text-align: center;
+margin: 30px;
+height: 40px;
+font-size: 30px;
+border-radius: 7px;
+border: 5px solid white;
 }
 
-.actividades {
-    background-color: pink;
-    color: white;
-    height: auto;
+main .card {
+width: 250px;
+text-align: center;
 }
 
-.galeriaservicios{
-    display: grid;
-    height: 642px;
-    width: 100%;
-    background-color: gray;
-    padding: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 120px;
+main .card .card-img-top {
+height: 300px;
+width: 250px;
+border: 5px solid white;
+}
+
+main .card .card-img-top:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .titulosnosotros:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .titulosnosotros1 {
+background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+background-image: linear-gradient(to top, white, gray, green);
+text-transform: uppercase;
+text-align: center;
+margin: 30px;
+height: 40px;
+font-size: 30px;
+border-radius: 7px;
+border: 5px solid white;
+}
+
+main .titulosnosotros1 .card {
+width: 250px;
+}
+
+main .titulosnosotros1 .card .card-img-top {
+height: 300px;
+width: 250px;
+border: 5px solid white;
+}
+
+main .titulosnosotros1 .card .card-img-top:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .titulosnosotros1:hover {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .titulosnosotros2 {
+background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(orange));
+background-image: linear-gradient(to top, white, gray, orange);
+text-transform: uppercase;
+text-align: center;
+margin: 30px;
+height: 40px;
+font-size: 30px;
+border-radius: 7px;
+border: 5px solid white;
+}
+
+main .titulosnosotros2 .card {
+width: 250px;
+}
+
+main .titulosnosotros2 .card .card-img-top {
+height: 300px;
+width: 250px;
+border: 5px solid white;
+}
+
+main .titulosnosotros2 .card .card-img-top:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .titulosnosotros2:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+main .galeriaservicios {
+display: -ms-grid;
+display: grid;
+height: 642px;
+width: 100%;
+background-color: gray;
+padding: 20px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+padding-bottom: 120px;
+-ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+-ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 30px 0% ;
-    box-sizing: border-box;
-    grid-template-areas: 
-    "futbol" 
-    "tenis"
-    "natacion" 
-    "training"
-    "texto";
+gap: 30px 0%;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    grid-template-areas: "futbol" 
+"tenis"
+"natacion" 
+"training"
+"texto";
 }
 
-.futbol{
-    grid-area: futbol;
-    height: 100px;
-    border: 2px solid #000;
-    border-radius: 20px;
-    background-image: url(../Multimedia/Futbol.jpeg);
-    background-position: center;
+main .galeriaservicios .futbol {
+-ms-grid-row: 1;
+-ms-grid-column: 1;
+grid-area: futbol;
+height: 100px;
+border: 2px solid #000;
+border-radius: 20px;
+background-image: url(../Multimedia/Futbol.jpeg);
+background-position: center;
 }
 
-.futbol:hover { 
-    transform: scale(1.05);
-    transition: all 0.5s;
-    cursor: pointer;
+main .galeriaservicios .futbol:hover {
+-webkit-transform: scale(1.05);
+        transform: scale(1.05);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
 }
 
-.tenis{
-    grid-area: tenis;
-    height: 100px;
-    border-radius: 20px;
-    border: 2px solid #000;
-    background-image: url(../Multimedia/Tenis.jpg);
-    background-position: center;
-    box-shadow: 0 0 5px #333;
+main .galeriaservicios .tenis {
+-ms-grid-row: 2;
+-ms-grid-column: 1;
+grid-area: tenis;
+height: 100px;
+border-radius: 20px;
+border: 2px solid #000;
+background-image: url(../Multimedia/Tenis.jpg);
+background-position: center;
+-webkit-box-shadow: 0 0 5px #333;
+        box-shadow: 0 0 5px #333;
 }
 
-.tenis:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
-    cursor: pointer;
-
+main .galeriaservicios .tenis:hover {
+-webkit-transform: scale(1.05);
+        transform: scale(1.05);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
 }
 
-.natacion{
-    grid-area: natacion;
-    height: 100px;
-    border-radius: 20px;
-    border: 2px solid #000;
-    background-image: url(../Multimedia/Natacion.jpeg);
-    background-position: center;
+main .galeriaservicios .natacion {
+-ms-grid-row: 3;
+-ms-grid-column: 1;
+grid-area: natacion;
+height: 100px;
+border-radius: 20px;
+border: 2px solid #000;
+background-image: url(../Multimedia/Natacion.jpeg);
+background-position: center;
 }
 
-.natacion:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
-    cursor: pointer;
-
+main .galeriaservicios .natacion:hover {
+-webkit-transform: scale(1.05);
+        transform: scale(1.05);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
 }
 
-.training{
-    grid-area: training;
-    height: 100px;
-    border-radius: 20px;
-    border: 2px solid #000;
-    background-image: url(../Multimedia/Training.jpeg);
-    background-position: center;
+main .galeriaservicios .training {
+-ms-grid-row: 4;
+-ms-grid-column: 1;
+grid-area: training;
+height: 100px;
+border-radius: 20px;
+border: 2px solid #000;
+background-image: url(../Multimedia/Training.jpeg);
+background-position: center;
 }
 
-.training:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
-    cursor: pointer;
-
+main .galeriaservicios .training:hover {
+-webkit-transform: scale(1.05);
+        transform: scale(1.05);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
 }
 
-.texto {
-    grid-area: texto;
-    width: 100%;
-    text-align: center;
-    background-image: linear-gradient(to right, green, gray, white );
-    border-radius: 15px;
+main .galeriaservicios .texto {
+-ms-grid-row: 5;
+-ms-grid-column: 1;
+grid-area: texto;
+width: 100%;
+text-align: center;
+background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(gray), to(white));
+background-image: linear-gradient(to right, green, gray, white);
+border-radius: 15px;
 }
 
-.texto a{
-    font-weight: bold;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    color: green;
-    background-color: gainsboro;
-    border-radius: 15px;
-    text-decoration: none;
-
+main .galeriaservicios .texto a {
+font-weight: bold;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 40px;
+color: green;
+background-color: gainsboro;
+border-radius: 15px;
+text-decoration: none;
 }
 
-.texto:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-    cursor: pointer;
+main .galeriaservicios .texto:hover {
+-webkit-transform: scale(1.2);
+        transform: scale(1.2);
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+cursor: pointer;
 }
 
-.fondocontact {
-    background-color: gray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
+main .fondocontact {
+background-color: gray;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 10px;
+text-align: center;
+text-transform: uppercase;
 }
 
-
-.consulta {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 25px;
-    background-image: linear-gradient(to top, white, gray, green);
+main .consulta {
+margin-top: 20px;
+padding: 10px;
+font-size: 25px;
+background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+background-image: linear-gradient(to top, white, gray, green);
 }
 
-
-.trabajanosotros{
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 25px;
-    background-image: linear-gradient(to top, white, gray, green);
+main .trabajanosotros {
+margin-top: 20px;
+padding: 10px;
+font-size: 25px;
+background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+background-image: linear-gradient(to top, white, gray, green);
 }
 
-.nosotros {
-    background-color: rgb(168, 166, 166);
+main .nosotros {
+background-color: #a8a6a6;
 }
 
-.card {
-    width: 250px;
+footer .foter {
+height: 200px;
+margin-top: 10px;
+background-color: #183d9b;
+margin-top: 10px;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+padding: 20px;
+font-weight: bold;
+font-size: 15px;
+text-align: left;
+line-height: 2;
 }
 
-.card img {
-    height: 300px;
-    width: 250px;
-    border: 5px solid white;
+footer .foter .acercade div a {
+color: white;
 }
 
-.card img:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-    cursor: pointer;
+footer .foter .ayuda {
+padding-left: 90px;
 }
 
-.titulosnosotros {
-    background-image: linear-gradient(to top, white , gray, rgb(60, 60, 216));
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px;
-    height: 40px;
-    font-size: 30px;
-    border-radius: 7px;
-    border: 5px solid white;
-
+footer .foter .ayuda div a {
+color: white;
 }
 
-.titulosnosotros:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-    cursor: pointer;
+footer .foter .redes {
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 70px 70px;
+    grid-template-columns: 70px 70px;
+-ms-grid-rows: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+gap: 0px 0px;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    grid-template-areas: "facebook instagram whatsapp"
+"email email email";
 }
 
-.titulosnosotros1 {
-    background-image: linear-gradient(to top, white , gray, green);
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px;
-    height: 40px;
-    font-size: 30px;
-    border-radius: 7px;
-    border: 5px solid white;
+footer .foter .redes .facebook {
+-ms-grid-row: 1;
+-ms-grid-column: 1;
+grid-area: facebook;
 }
 
-.titulosnosotros1:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-    cursor: pointer;
+footer .foter .redes .instagram {
+-ms-grid-row: 1;
+-ms-grid-column: 2;
+grid-area: instagram;
 }
 
-.titulosnosotros2 {
-    background-image: linear-gradient(to top, white , gray, orange);
-    text-transform: uppercase;
-    text-align: center;
-    margin: 30px;
-    height: 40px;
-    font-size: 30px;
-    border-radius: 7px;
-    border: 5px solid white;
+footer .foter .redes .whatsapp {
+-ms-grid-row: 1;
+-ms-grid-column: 3;
+grid-area: whatsapp;
 }
 
-.titulosnosotros2:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-    cursor: pointer;
+footer .foter .redes .email {
+-ms-grid-row: 2;
+-ms-grid-column: 1;
+-ms-grid-column-span: 3;
+grid-area: email;
 }
 
-footer{
-    height: 300px;
+footer .foter .redes .email a {
+color: white;
 }
 
-.foter {
-    height: 200px;
-    margin-top: 10px;
-    background-color: rgb(24, 61, 155);
-    margin-top: 10px;
-    box-sizing: border-box;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: left;
-    line-height: 2;
-    
-}
-
-.acercade div a{
-    grid-area: acercade;
-    color: white;
-}
-
-.ayuda{
-    padding-left: 90px;
-    grid-area: ayuda;
-}
-.ayuda div a{
-    color: white;
-}
-
-.redes{
-    display: grid; 
-    grid-template-columns: 70px 70px; 
-    grid-template-rows: 50px 50px 50px; 
-    gap: 0px 0px; 
-    justify-content: center;
-    grid-template-areas:
-    "facebook instagram whatsapp"
-    "email email email";
-    grid-area: redes;
-}
-
-.facebook{
-    grid-area: facebook;
-}
-
-.instagram{
-    grid-area: instagram;
-}
-
-
-.whatsapp{
-    grid-area: whatsapp;
-}
-
-.icon {
-    color: white;
-}
-
-.email{
-    grid-area: email;
-
-}
-
-.email a {
-    color: white;
-}
-
-footer a img {
-    margin-left: 20px;
-    margin-right: 10px;
+footer .foter .redes footer a img {
+margin-left: 20px;
+margin-right: 10px;
 }
 
 @media only screen and (max-width: 360px) {
-
 body {
     height: auto;
     margin-bottom: 0%;
 }
-
-.lavi{
+header .lavi {
     display: none;
 }
-
-.card {
+main .btn {
+    height: 35px;
+    width: 100px;
+}
+main .card {
     height: 340px;
     width: 150px;
     margin-top: 10px;
 }
-
-.card img {
+main .card .card-img-top {
     height: 200px;
     width: 150px;
     border: 5px solid white;
 }
-
-.card-title{
+main .card .card-title {
     font-size: 15px;
     padding: auto;
 }
-
-.btn {
-    height: 35px;
-    width: 100px;
-}
-
-.acercade{
-display: none;
-}
-
-.ayuda {
+footer .acercade {
     display: none;
 }
-
-.email {
-    /* display: none; */
+footer .ayuda {
+    display: none;
 }
-
-.foter {
+footer .foter {
     height: 120px;
 }
 }
-@media only screen and (min-width: 360px) and (max-width: 600px) {
 
-header{
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+header {
     width: 100%;
 }
-
-.lavi{
-    display: none;
+main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
-
-.card {
-    height: 340px;
-    width: 150px;
-    margin-top: 10px;
-}
-
-.card img {
-    height: 200px;
-    width: 150px;
-    border: 5px solid white;
-}
-
-.card-title{
-    font-size: 15px;
-    padding: auto;
-}
-
-.btn {
+main .btn {
     height: 35px;
     width: 100px;
 }
-
-.contacto {
-    display: block;
+main .card {
+    height: 440px;
+    width: 250px;
+    margin: 10px;
 }
-
-.acercade{
+main .card-img-top {
+    height: 200px;
+    width: 250px;
+    border: 5px solid white;
+}
+main .card-title {
+    font-size: 15px;
+    padding: auto;
+}
+footer .acercade {
     display: none;
-    }
-    
-.ayuda {
+}
+footer .ayuda {
     display: none;
 }
-
-.email {
-    /* display: none; */
-}
-
-.redes{
+footer .redes {
     width: 100%;
     padding: auto;
 }
 }
 
-@media only screen and (min-width:470px) and (max-width:575px) {
-.nleft{
-    background-image: url(../Multimedia/Portada\ AT1.png);
+@media only screen and (min-width: 470px) and (max-width: 575px) {
+main .nleft {
+    background-image: url("../Multimedia/Portada AT1.png");
 }
 }
 
-@media only screen and (min-width:500px) and (max-width:700px) {
+@media only screen and (min-width: 500px) {
+main .galeriaservicios {
+    -ms-grid-columns: 40% 20% 40%;
+        grid-template-columns: 40% 20% 40%;
+    -ms-grid-rows: 40% 20% 40%;
+        grid-template-rows: 40% 20% 40%;
+    gap: 0% 0%;
+    padding: 20px;
+        grid-template-areas: "futbol . tenis"
+"texto texto texto"
+"natacion . training";
+}
+main .galeriaservicios .futbol {
+    height: 200px;
+}
+main .galeriaservicios .tenis {
+    height: 200px;
+}
+main .galeriaservicios .natacion {
+    height: 200px;
+}
+main .galeriaservicios .training {
+    height: 200px;
+}
+main .galeriaservicios .texto {
+    margin-bottom: 40px;
+    margin-top: 5px;
+    /* transform: scale(1.1); */
+}
+main .galeriaservicios .texto a {
+    font-size: 50px;
+    height: 50px;
+}
+main .galeriaservicios footer {
+    width: 100%;
+}
+}
 
-.acercade{
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+footer .acercade {
     font-size: 13px;
 }
-
-.ayuda {
+footer .ayuda {
     font-size: 13px;
 }
-
-.email {
+footer .email {
     font-size: 13px;
     margin-left: 20px;
 }
 }
 
-@media only screen and (min-width: 500px) {
-
-
-.galeriaservicios {
-    grid-template-columns: 40% 20% 40% ;
-    grid-template-rows: 40% 20% 40%;
-    gap: 0% 0%;
-    padding: 20px;
-    grid-template-areas: 
-    "futbol . tenis"
-    "texto texto texto"
-    "natacion . training";
-    }
-    
-.futbol {
-    height: 200px;
-}
-
-.tenis {
-    height: 200px;
-}
-
-.natacion {
-    height: 200px;
-}
-
-.training {
-    height: 200px;
-}
-
-.texto {
-    margin-bottom: 40px;
-    margin-top: 5px;
-    /* transform: scale(1.1); */
-}
-.texto a{
-    font-size: 50px;
-    height: 50px;
-}
-
-footer {
-    width: 100%;
-}
-}
-
 @media only screen and (min-width: 600px) {
-
-
 header {
     /* height: 220px; */
     width: 100%;
     background-image: url(../multimedia/ATfondo.jpg);
     background-position: center;
     background-attachment: fixed;
-    }
-    
-.somos {
-    margin: 20px;
-    font-size: 10,5px;
-    }
-    
-    
-.logo {
-    height: 150px;
-    width: 150px;
-    margin-top: 40px;
-    }
-    
 }
-
-.lavi { 
+header .lavi {
     font-size: 25px;
 }
-
-.card {
-    margin-top: 10px;
+main .card {
+    margin: 10px;
+    height: 470px;
 }
-
-
-@media only screen and (min-width: 750px) {
-
-.portada {
-    height: 250px;
-    width: 400px;
-}
-
-.lavi { 
-    font-size: 30px;
-}
-.somos {
-    font-size: 13px;
-}
-
-.findo {
-    width: 100%;
+main .card .card-img-top {
+    height: 300px;
+    border: 5px solid white;
 }
 }
 
-@media only screen and (min-width:800px) {
-
-.nleft {
-    background-image: url(../Multimedia/Portada\ AT1.png);
+@media only screen and (min-width: 800px) {
+main .nleft {
+    background-image: url("../Multimedia/Portada AT1.png");
 }
 }
 
-@media only screen and (min-width:1000px) {
-.nleft {
+@media only screen and (min-width: 1000px) {
+main .nleft {
     background-position: top;
     height: 400px;
 }
 }
+/*# sourceMappingURL=estilos.css.map */
