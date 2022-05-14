@@ -1,3 +1,22 @@
+$color1: green;
+$color2: rgb(24, 61, 155);
+$color3: gray;
+$color4: white;
+$color5: pink;
+$color6: orange;
+
+$ancho1: 100%;
+$ancho2: 100px;
+$ancho3: 150px;
+$ancho4: 250px;
+$largo1: 40px;
+$largo2: 50px;
+$largo3: 100px;
+$largo4: 200px;
+$largo5: 300px;
+$largo6: 400px;
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -11,19 +30,22 @@ body {
     background-size: cover;
 }
 
-header{
-    // height: auto;
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;
+}
 
+header{
     .carousel-inner img{
         background-size: cover;
         background-position: center;
-        height: 300px;
-        width: 100%;
+        height: $largo5;
+        width: $ancho1;
     }
     
     .logoat{
         height: 150px !important;
-        width: 150px !important;
+        width: $ancho3 !important;
         position: relative;
         border-radius: 5px;
     }
@@ -35,12 +57,12 @@ header{
 }
 
 .navbar {
-    background-color: green;
+    background-color: $color1;
     color: black;
     /* margin-bottom: 20px; */
 }
 .navbar a {
-    color: white !important;
+    color: $color4 !important;
     text-transform: uppercase;
 }
 
@@ -49,7 +71,7 @@ header{
 }
 
 .navbar-brand:hover {
-    background-color: green !important;
+    background-color: $color1 !important;
 }
 
 
@@ -59,13 +81,14 @@ main{
         text-transform: uppercase;
         margin-top: 10px;
         font-size: 25px;
-        color: white;
-        background-color: green;
+        color: $color4;
+        background-color: $color1;
     }
     
     .nleft {
-        height: 300px;
-        width: 100%;
+        // height: $largo5;
+        // width: $ancho1;
+        @include sizes ($largo5,$ancho1);
         background-image: url("../Multimedia/Portada AT.png");
         background-position: center;
         background-size: cover;
@@ -74,43 +97,61 @@ main{
         /* margin-left: 30px; */
     }
     .nright {
-        background-color: rgb(24, 61, 155);
-        /* height: 300px; */
-        /* padding: 30px; */
+        background-color: $color2;
         margin-top: 10px;
         margin-bottom: 20px;
-        color: white;
+        color: $color4;
     }
 
     .nleft:hover { 
         transform: scale(1.05);
         transition: all 0.5s;
     }
-    .actividades {
-        background-color: pink;
-        color: white;
-        height: auto;
+
+    $colores: (
+        colo1: rgb(235, 180, 189),
+        colo2: rgb(231, 170, 180),
+        colo3: rgb(235, 180, 189),
+        colo4: rgb(231, 170, 180),
+    );
+
+    @each $colo, $font in $colores {
+        .act--#{$colo} {
+            color: $color4;
+            height: auto;
+            background-color: $font;
+            border-radius: 5px; 
+        }
     }
 
-    .titulosnosotros {
-        background-image: linear-gradient(to top, white , gray, rgb(60, 60, 216));
+    .titulosn {
         text-transform: uppercase;
         text-align: center;
         margin: 30px;
         height: 40px;
         font-size: 30px;
         border-radius: 7px;
-        border: 5px solid white;
+        border: 5px solid $color4;
+    }
+    
+    .titulosnosotros {
+        background-image: linear-gradient(to top, $color4 , $color3, $color2);
+        @extend .titulosn;
+    }
+
+    .titulosnosotros:hover {
+        transform: scale(1.2);
+        transition: all 0.5s;
+        cursor: pointer;
     }
 
     .card {
-        width: 250px; 
+        width: $ancho4; 
         text-align: center;
     
         .card-img-top {
-            height: 300px;
-            width: 250px;
-            border: 5px solid white;
+            @include sizes($largo5, $ancho4);
+            border: 5px solid $color4;
         }
         
         .card-img-top:hover {
@@ -118,40 +159,11 @@ main{
             transition: all 0.5s;
             cursor: pointer;
         }
-    
-    }
-    
-    .titulosnosotros:hover {
-        transform: scale(1.2);
-        transition: all 0.5s;
-        cursor: pointer;
     }
     
     .titulosnosotros1 {
-        background-image: linear-gradient(to top, white , gray, green);
-        text-transform: uppercase;
-        text-align: center;
-        margin: 30px;
-        height: 40px;
-        font-size: 30px;
-        border-radius: 7px;
-        border: 5px solid white;
-
-        .card {
-            width: 250px;
-        
-            .card-img-top {
-                height: 300px;
-                width: 250px;
-                border: 5px solid white;
-            }
-            
-            .card-img-top:hover {
-                transform: scale(1.2);
-                transition: all 0.5s;
-                cursor: pointer;
-            }
-        }
+        background-image: linear-gradient(to top, $color4 , $color3 , $color1);
+        @extend .titulosn;
     }
     
     .titulosnosotros1:hover {
@@ -161,30 +173,8 @@ main{
     }
     
     .titulosnosotros2 {
-        background-image: linear-gradient(to top, white , gray, orange);
-        text-transform: uppercase;
-        text-align: center;
-        margin: 30px;
-        height: 40px;
-        font-size: 30px;
-        border-radius: 7px;
-        border: 5px solid white;
-
-        .card {
-            width: 250px;
-        
-            .card-img-top {
-                height: 300px;
-                width: 250px;
-                border: 5px solid white;
-            }
-            
-            .card-img-top:hover {
-                transform: scale(1.2);
-                transition: all 0.5s;
-                cursor: pointer;
-            }
-        }
+        background-image: linear-gradient(to top, $color4 , $color3 , $color6);
+        @extend .titulosn;
     }
     
     .titulosnosotros2:hover {
@@ -195,11 +185,10 @@ main{
 
     .galeriaservicios{
         display: grid;
-        height: 642px;
-        width: 100%;
-        background-color: gray;
+        @include sizes(642px, $ancho1);
+        background-color: $color3;
         padding: 20px;
-        color: white;
+        color: $color4;
         font-family: Arial, Helvetica, sans-serif;
         padding-bottom: 120px;
         grid-template-columns: 1fr;
@@ -215,7 +204,7 @@ main{
         
         .futbol{
             grid-area: futbol;
-            height: 100px;
+            height: $largo3;
             border: 2px solid #000;
             border-radius: 20px;
             background-image: url(../Multimedia/Futbol.jpeg);
@@ -230,7 +219,7 @@ main{
 
         .tenis{
             grid-area: tenis;
-            height: 100px;
+            height: $largo3;
             border-radius: 20px;
             border: 2px solid #000;
             background-image: url(../Multimedia/Tenis.jpg);
@@ -247,7 +236,7 @@ main{
         
         .natacion{
             grid-area: natacion;
-            height: 100px;
+            height: $largo3;
             border-radius: 20px;
             border: 2px solid #000;
             background-image: url(../Multimedia/Natacion.jpeg);
@@ -263,7 +252,7 @@ main{
         
         .training{
             grid-area: training;
-            height: 100px;
+            height: $largo3;
             border-radius: 20px;
             border: 2px solid #000;
             background-image: url(../Multimedia/Training.jpeg);
@@ -279,9 +268,9 @@ main{
         
         .texto {
             grid-area: texto;
-            width: 100%;
+            width: $ancho1;
             text-align: center;
-            background-image: linear-gradient(to right, green, gray, white );
+            background-image: linear-gradient(to right, $color1, $color3, $color4 );
             border-radius: 15px;
         }
         
@@ -290,7 +279,7 @@ main{
             text-align: center;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 40px;
-            color: green;
+            color: $color1;
             background-color: gainsboro;
             border-radius: 15px;
             text-decoration: none;
@@ -304,7 +293,7 @@ main{
     }
 
     .fondocontact {
-        background-color: gray;
+        background-color: $color3;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 10px;
         text-align: center;
@@ -315,7 +304,7 @@ main{
         margin-top: 20px;
         padding: 10px;
         font-size: 25px;
-        background-image: linear-gradient(to top, white, gray, green);
+        background-image: linear-gradient(to top, $color4, $color3, $color1);
     }
     
     
@@ -323,7 +312,7 @@ main{
         margin-top: 20px;
         padding: 10px;
         font-size: 25px;
-        background-image: linear-gradient(to top, white, gray, green);
+        background-image: linear-gradient(to top, $color4, $color3, $color1);
     }
     
     .nosotros {
@@ -334,12 +323,12 @@ main{
 footer{
 
     .foter {
-        height: 200px;
+        @include sizes($largo4, auto);
         margin-top: 10px;
-        background-color: rgb(24, 61, 155);
+        background-color: $color2;
         margin-top: 10px;
         box-sizing: border-box;
-        color: white;
+        color: $color4;
         font-family: Arial, Helvetica, sans-serif;
         padding: 20px;
         font-weight: bold;
@@ -348,14 +337,14 @@ footer{
         line-height: 2;
         
         .acercade div a{
-            color: white;
+            color: $color4;
         }
         
         .ayuda{
             padding-left: 90px;
         }
         .ayuda div a{
-            color: white;
+            color: $color4;
         }
         
         .redes{
@@ -383,7 +372,7 @@ footer{
                 grid-area: email;
             }
             .email a {
-                color: white;
+                color: $color4;
             }
             
             footer a img {
@@ -410,18 +399,15 @@ header{
 
 main{
     .btn {
-        height: 35px;
-        width: 100px;
+        @include sizes(35px, $ancho2);
     }
     .card {
-        height: 340px;
-        width: 150px;
+        @include sizes(340px, $ancho3);
         margin-top: 10px;
     
         .card-img-top {
-            height: 200px;
-            width: 150px;
-            border: 5px solid white;
+            @include sizes($largo4,$ancho3);
+            border: 5px solid $color4;
         }
         
         .card-title{
@@ -449,27 +435,24 @@ footer{
 @media only screen and (min-width: 360px) and (max-width: 600px) {
 
 header{
-    width: 100%; 
+    width: $ancho1; 
 }
 
 main {
     align-items: center;
 
     .btn {
-        height: 35px;
-        width: 100px;
+        @include sizes(35px,$ancho2);
     }
 
     .card {
-        height: 440px;
-        width: 250px;
+        @include sizes(440px, $ancho4);
         margin: 10px;
     }
     
     .card-img-top {
-        height: 200px;
-        width: 250px;
-        border: 5px solid white;
+        @include sizes($largo4, $ancho4);
+        border: 5px solid $color4;
     }
     
     .card-title{
@@ -488,7 +471,7 @@ footer{
     }
     
     .redes{
-        width: 100%;
+        width: $ancho1;
         padding: auto;
     }
 }
@@ -516,19 +499,19 @@ main {
         "natacion . training";
         
         .futbol {
-            height: 200px;
+            height: $largo4;
         }
         
         .tenis {
-            height: 200px;
+            height: $largo4;
         }
         
         .natacion {
-            height: 200px;
+            height: $largo4;
         }
         
         .training {
-            height: 200px;
+            height: $largo4;
         }
         
         .texto {
@@ -537,12 +520,12 @@ main {
             /* transform: scale(1.1); */
         }
         .texto a{
-            font-size: 50px;
-            height: 50px;
+            font-size: $largo2;
+            height: $largo2;
         }
         
         footer {
-            width: 100%;
+            width: $ancho1;
         }
     }
 }
@@ -570,7 +553,7 @@ footer{
 
 header {
     /* height: 220px; */
-    width: 100%;
+    width: $ancho1;
     background-image: url(../multimedia/ATfondo.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -586,8 +569,8 @@ main {
         height: 470px;
 
         .card-img-top{
-            height: 300px;
-            border: 5px solid white;
+            height: $largo5;
+            border: 5px solid $color4;
         }
     }
 }
@@ -607,7 +590,7 @@ main{
 
     .nleft {
         background-position: top;
-        height: 400px;
+        height: $largo6;
     }
 }
 }

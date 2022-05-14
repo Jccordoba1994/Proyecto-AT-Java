@@ -1,229 +1,202 @@
 * {
-margin: 0%;
-padding: 0%;
-/* box-sizing: border-box; */
+  margin: 0%;
+  padding: 0%;
+  /* box-sizing: border-box; */
 }
 
 body {
-/* height: 100%; */
-background-color: gainsboro;
-background-position: center;
-background-size: cover;
+  /* height: 100%; */
+  background-color: gainsboro;
+  background-position: center;
+  background-size: cover;
 }
 
 header .carousel-inner img {
-background-size: cover;
-background-position: center;
-height: 300px;
-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
 }
 
 header .logoat {
-height: 150px !important;
-width: 150px !important;
-position: relative;
-border-radius: 5px;
+  height: 150px !important;
+  width: 150px !important;
+  position: relative;
+  border-radius: 5px;
 }
 
 header .lavi {
-text-shadow: 0 0 10px #000;
-font-style: italic;
+  text-shadow: 0 0 10px #000;
+  font-style: italic;
 }
 
 .navbar {
-background-color: green;
-color: black;
-/* margin-bottom: 20px; */
+  background-color: green;
+  color: black;
+  /* margin-bottom: 20px; */
 }
 
 .navbar a {
-color: white !important;
-text-transform: uppercase;
+  color: white !important;
+  text-transform: uppercase;
 }
 
 .navbar a:hover {
-background-color: #085f33;
+  background-color: #085f33;
 }
 
 .navbar-brand:hover {
-background-color: green !important;
+  background-color: green !important;
 }
 
 main .titulo1 {
-text-align: center;
-text-transform: uppercase;
-margin-top: 10px;
-font-size: 25px;
-color: white;
-background-color: green;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: green;
 }
 
 main .nleft {
-height: 300px;
-width: 100%;
-background-image: url("../Multimedia/Portada AT.png");
-background-position: center;
-background-size: cover;
-margin-bottom: 20px;
-margin-top: 10px;
-/* margin-left: 30px; */
+  height: 300px;
+  width: 100%;
+  background-image: url("../Multimedia/Portada AT.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  /* margin-left: 30px; */
 }
 
 main .nright {
-background-color: #183d9b;
-/* height: 300px; */
-/* padding: 30px; */
-margin-top: 10px;
-margin-bottom: 20px;
-color: white;
+  background-color: #183d9b;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 main .nleft:hover {
--webkit-transform: scale(1.05);
-        transform: scale(1.05);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-main .actividades {
-background-color: pink;
-color: white;
-height: auto;
+main .act--colo1 {
+  color: white;
+  height: auto;
+  background-color: #ebb4bd;
+  border-radius: 5px;
+}
+
+main .act--colo2 {
+  color: white;
+  height: auto;
+  background-color: #e7aab4;
+  border-radius: 5px;
+}
+
+main .act--colo3 {
+  color: white;
+  height: auto;
+  background-color: #ebb4bd;
+  border-radius: 5px;
+}
+
+main .act--colo4 {
+  color: white;
+  height: auto;
+  background-color: #e7aab4;
+  border-radius: 5px;
+}
+
+main .titulosn, main .titulosnosotros, main .titulosnosotros1, main .titulosnosotros2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 7px;
+  border: 5px solid white;
 }
 
 main .titulosnosotros {
-background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#3c3cd8));
-background-image: linear-gradient(to top, white, gray, #3c3cd8);
-text-transform: uppercase;
-text-align: center;
-margin: 30px;
-height: 40px;
-font-size: 30px;
-border-radius: 7px;
-border: 5px solid white;
-}
-
-main .card {
-width: 250px;
-text-align: center;
-}
-
-main .card .card-img-top {
-height: 300px;
-width: 250px;
-border: 5px solid white;
-}
-
-main .card .card-img-top:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#183d9b));
+  background-image: linear-gradient(to top, white, gray, #183d9b);
 }
 
 main .titulosnosotros:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+main .card {
+  width: 250px;
+  text-align: center;
+}
+
+main .card .card-img-top {
+  height: 300px;
+  width: 250px;
+  border: 5px solid white;
+}
+
+main .card .card-img-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .titulosnosotros1 {
-background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-background-image: linear-gradient(to top, white, gray, green);
-text-transform: uppercase;
-text-align: center;
-margin: 30px;
-height: 40px;
-font-size: 30px;
-border-radius: 7px;
-border: 5px solid white;
-}
-
-main .titulosnosotros1 .card {
-width: 250px;
-}
-
-main .titulosnosotros1 .card .card-img-top {
-height: 300px;
-width: 250px;
-border: 5px solid white;
-}
-
-main .titulosnosotros1 .card .card-img-top:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+  background-image: linear-gradient(to top, white, gray, green);
 }
 
 main .titulosnosotros1:hover {
--webkit-transform: scale(1.1);
-        transform: scale(1.1);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .titulosnosotros2 {
-background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(orange));
-background-image: linear-gradient(to top, white, gray, orange);
-text-transform: uppercase;
-text-align: center;
-margin: 30px;
-height: 40px;
-font-size: 30px;
-border-radius: 7px;
-border: 5px solid white;
-}
-
-main .titulosnosotros2 .card {
-width: 250px;
-}
-
-main .titulosnosotros2 .card .card-img-top {
-height: 300px;
-width: 250px;
-border: 5px solid white;
-}
-
-main .titulosnosotros2 .card .card-img-top:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(orange));
+  background-image: linear-gradient(to top, white, gray, orange);
 }
 
 main .titulosnosotros2:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .galeriaservicios {
-display: -ms-grid;
-display: grid;
-height: 642px;
-width: 100%;
-background-color: gray;
-padding: 20px;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-padding-bottom: 120px;
--ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
--ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-gap: 30px 0%;
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    grid-template-areas: "futbol" 
+  display: -ms-grid;
+  display: grid;
+  height: 642px;
+  width: 100%;
+  background-color: gray;
+  padding: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 120px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+      grid-template-areas: "futbol" 
 "tenis"
 "natacion" 
 "training"
@@ -231,302 +204,303 @@ gap: 30px 0%;
 }
 
 main .galeriaservicios .futbol {
--ms-grid-row: 1;
--ms-grid-column: 1;
-grid-area: futbol;
-height: 100px;
-border: 2px solid #000;
-border-radius: 20px;
-background-image: url(../Multimedia/Futbol.jpeg);
-background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: futbol;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-image: url(../Multimedia/Futbol.jpeg);
+  background-position: center;
 }
 
 main .galeriaservicios .futbol:hover {
--webkit-transform: scale(1.05);
-        transform: scale(1.05);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .galeriaservicios .tenis {
--ms-grid-row: 2;
--ms-grid-column: 1;
-grid-area: tenis;
-height: 100px;
-border-radius: 20px;
-border: 2px solid #000;
-background-image: url(../Multimedia/Tenis.jpg);
-background-position: center;
--webkit-box-shadow: 0 0 5px #333;
-        box-shadow: 0 0 5px #333;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tenis;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-image: url(../Multimedia/Tenis.jpg);
+  background-position: center;
+  -webkit-box-shadow: 0 0 5px #333;
+          box-shadow: 0 0 5px #333;
 }
 
 main .galeriaservicios .tenis:hover {
--webkit-transform: scale(1.05);
-        transform: scale(1.05);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .galeriaservicios .natacion {
--ms-grid-row: 3;
--ms-grid-column: 1;
-grid-area: natacion;
-height: 100px;
-border-radius: 20px;
-border: 2px solid #000;
-background-image: url(../Multimedia/Natacion.jpeg);
-background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: natacion;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-image: url(../Multimedia/Natacion.jpeg);
+  background-position: center;
 }
 
 main .galeriaservicios .natacion:hover {
--webkit-transform: scale(1.05);
-        transform: scale(1.05);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .galeriaservicios .training {
--ms-grid-row: 4;
--ms-grid-column: 1;
-grid-area: training;
-height: 100px;
-border-radius: 20px;
-border: 2px solid #000;
-background-image: url(../Multimedia/Training.jpeg);
-background-position: center;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: training;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  background-image: url(../Multimedia/Training.jpeg);
+  background-position: center;
 }
 
 main .galeriaservicios .training:hover {
--webkit-transform: scale(1.05);
-        transform: scale(1.05);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .galeriaservicios .texto {
--ms-grid-row: 5;
--ms-grid-column: 1;
-grid-area: texto;
-width: 100%;
-text-align: center;
-background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(gray), to(white));
-background-image: linear-gradient(to right, green, gray, white);
-border-radius: 15px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: texto;
+  width: 100%;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(gray), to(white));
+  background-image: linear-gradient(to right, green, gray, white);
+  border-radius: 15px;
 }
 
 main .galeriaservicios .texto a {
-font-weight: bold;
-text-align: center;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 40px;
-color: green;
-background-color: gainsboro;
-border-radius: 15px;
-text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  color: green;
+  background-color: gainsboro;
+  border-radius: 15px;
+  text-decoration: none;
 }
 
 main .galeriaservicios .texto:hover {
--webkit-transform: scale(1.2);
-        transform: scale(1.2);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 main .fondocontact {
-background-color: gray;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-padding: 10px;
-text-align: center;
-text-transform: uppercase;
+  background-color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 main .consulta {
-margin-top: 20px;
-padding: 10px;
-font-size: 25px;
-background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-background-image: linear-gradient(to top, white, gray, green);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 25px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+  background-image: linear-gradient(to top, white, gray, green);
 }
 
 main .trabajanosotros {
-margin-top: 20px;
-padding: 10px;
-font-size: 25px;
-background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-background-image: linear-gradient(to top, white, gray, green);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 25px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
+  background-image: linear-gradient(to top, white, gray, green);
 }
 
 main .nosotros {
-background-color: #a8a6a6;
+  background-color: #a8a6a6;
 }
 
 footer .foter {
-height: 200px;
-margin-top: 10px;
-background-color: #183d9b;
-margin-top: 10px;
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-padding: 20px;
-font-weight: bold;
-font-size: 15px;
-text-align: left;
-line-height: 2;
+  height: 200px;
+  width: auto;
+  margin-top: 10px;
+  background-color: #183d9b;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  line-height: 2;
 }
 
 footer .foter .acercade div a {
-color: white;
+  color: white;
 }
 
 footer .foter .ayuda {
-padding-left: 90px;
+  padding-left: 90px;
 }
 
 footer .foter .ayuda div a {
-color: white;
+  color: white;
 }
 
 footer .foter .redes {
-display: -ms-grid;
-display: grid;
--ms-grid-columns: 70px 70px;
-    grid-template-columns: 70px 70px;
--ms-grid-rows: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-gap: 0px 0px;
--webkit-box-pack: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    grid-template-areas: "facebook instagram whatsapp"
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px 70px;
+      grid-template-columns: 70px 70px;
+  -ms-grid-rows: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+  gap: 0px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "facebook instagram whatsapp"
 "email email email";
 }
 
 footer .foter .redes .facebook {
--ms-grid-row: 1;
--ms-grid-column: 1;
-grid-area: facebook;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: facebook;
 }
 
 footer .foter .redes .instagram {
--ms-grid-row: 1;
--ms-grid-column: 2;
-grid-area: instagram;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: instagram;
 }
 
 footer .foter .redes .whatsapp {
--ms-grid-row: 1;
--ms-grid-column: 3;
-grid-area: whatsapp;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: whatsapp;
 }
 
 footer .foter .redes .email {
--ms-grid-row: 2;
--ms-grid-column: 1;
--ms-grid-column-span: 3;
-grid-area: email;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: email;
 }
 
 footer .foter .redes .email a {
-color: white;
+  color: white;
 }
 
 footer .foter .redes footer a img {
-margin-left: 20px;
-margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 360px) {
-body {
+  body {
     height: auto;
     margin-bottom: 0%;
-}
-header .lavi {
+  }
+  header .lavi {
     display: none;
-}
-main .btn {
+  }
+  main .btn {
     height: 35px;
     width: 100px;
-}
-main .card {
+  }
+  main .card {
     height: 340px;
     width: 150px;
     margin-top: 10px;
-}
-main .card .card-img-top {
+  }
+  main .card .card-img-top {
     height: 200px;
     width: 150px;
     border: 5px solid white;
-}
-main .card .card-title {
+  }
+  main .card .card-title {
     font-size: 15px;
     padding: auto;
-}
-footer .acercade {
+  }
+  footer .acercade {
     display: none;
-}
-footer .ayuda {
+  }
+  footer .ayuda {
     display: none;
-}
-footer .foter {
+  }
+  footer .foter {
     height: 120px;
-}
+  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 600px) {
-header {
+  header {
     width: 100%;
-}
-main {
+  }
+  main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-}
-main .btn {
+  }
+  main .btn {
     height: 35px;
     width: 100px;
-}
-main .card {
+  }
+  main .card {
     height: 440px;
     width: 250px;
     margin: 10px;
-}
-main .card-img-top {
+  }
+  main .card-img-top {
     height: 200px;
     width: 250px;
     border: 5px solid white;
-}
-main .card-title {
+  }
+  main .card-title {
     font-size: 15px;
     padding: auto;
-}
-footer .acercade {
+  }
+  footer .acercade {
     display: none;
-}
-footer .ayuda {
+  }
+  footer .ayuda {
     display: none;
-}
-footer .redes {
+  }
+  footer .redes {
     width: 100%;
     padding: auto;
-}
+  }
 }
 
 @media only screen and (min-width: 470px) and (max-width: 575px) {
-main .nleft {
+  main .nleft {
     background-image: url("../Multimedia/Portada AT1.png");
-}
+  }
 }
 
 @media only screen and (min-width: 500px) {
-main .galeriaservicios {
+  main .galeriaservicios {
     -ms-grid-columns: 40% 20% 40%;
         grid-template-columns: 40% 20% 40%;
     -ms-grid-rows: 40% 20% 40%;
@@ -536,77 +510,77 @@ main .galeriaservicios {
         grid-template-areas: "futbol . tenis"
 "texto texto texto"
 "natacion . training";
-}
-main .galeriaservicios .futbol {
+  }
+  main .galeriaservicios .futbol {
     height: 200px;
-}
-main .galeriaservicios .tenis {
+  }
+  main .galeriaservicios .tenis {
     height: 200px;
-}
-main .galeriaservicios .natacion {
+  }
+  main .galeriaservicios .natacion {
     height: 200px;
-}
-main .galeriaservicios .training {
+  }
+  main .galeriaservicios .training {
     height: 200px;
-}
-main .galeriaservicios .texto {
+  }
+  main .galeriaservicios .texto {
     margin-bottom: 40px;
     margin-top: 5px;
     /* transform: scale(1.1); */
-}
-main .galeriaservicios .texto a {
+  }
+  main .galeriaservicios .texto a {
     font-size: 50px;
     height: 50px;
-}
-main .galeriaservicios footer {
+  }
+  main .galeriaservicios footer {
     width: 100%;
-}
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
-footer .acercade {
+  footer .acercade {
     font-size: 13px;
-}
-footer .ayuda {
+  }
+  footer .ayuda {
     font-size: 13px;
-}
-footer .email {
+  }
+  footer .email {
     font-size: 13px;
     margin-left: 20px;
-}
+  }
 }
 
 @media only screen and (min-width: 600px) {
-header {
+  header {
     /* height: 220px; */
     width: 100%;
     background-image: url(../multimedia/ATfondo.jpg);
     background-position: center;
     background-attachment: fixed;
-}
-header .lavi {
+  }
+  header .lavi {
     font-size: 25px;
-}
-main .card {
+  }
+  main .card {
     margin: 10px;
     height: 470px;
-}
-main .card .card-img-top {
+  }
+  main .card .card-img-top {
     height: 300px;
     border: 5px solid white;
-}
+  }
 }
 
 @media only screen and (min-width: 800px) {
-main .nleft {
+  main .nleft {
     background-image: url("../Multimedia/Portada AT1.png");
-}
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-main .nleft {
+  main .nleft {
     background-position: top;
     height: 400px;
-}
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
