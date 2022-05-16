@@ -20,14 +20,15 @@ $largo6: 400px;
 *{
     margin: 0%;
     padding: 0%;
-    /* box-sizing: border-box; */;
 }
 
 body {
     /* height: 100%; */
-    background-color: gainsboro;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../Multimedia/Fondo.png);
+    position: relative;
+    width: 100%;
+    background-repeat: initial;
+    background-size: contain;
 }
 
 @mixin sizes ($height, $width) {
@@ -292,6 +293,189 @@ main{
         }
     }
 
+    .crtbarrios {
+        @include sizes($largo4, $ancho1); 
+        border: 5px solid $color1;
+        border-radius: 10px;
+        background-position: center;
+        // transform: scale(0.9);
+    }
+
+    .barrios {
+        display: grid;
+        @include sizes(1450px , $ancho1);
+        background-color: $color2;
+        box-sizing: border-box;;
+        padding: 10px;
+        gap: 3% 10%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "altos" "riberas" 
+        "solares" "docta" 
+        "sietesoles" "patagonia" 
+        "bosque" "livette" 
+        "cañuelas" "delicias"
+        "prados" "cuesta";
+
+        .hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .altos {
+            grid-area: altos;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            @extend .crtbarrios;
+            background-image: url(../Multimedia/Altos.png);
+        }
+
+        .altos:hover {
+            @extend .hover;
+        }
+
+        .riberas {
+            grid-area: riberas;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            @extend .crtbarrios;
+            background-image: url(../Multimedia/Riberas.jpg);
+        }
+
+        .riberas:hover {
+            @extend .hover;
+        }
+
+        .solares {
+            grid-area: solares;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @extend .crtbarrios;
+            background-image: url(../Multimedia/Solares.jpg);
+        }
+
+        .solares:hover {
+            @extend .hover;
+        }
+
+        .docta {
+            grid-area: docta;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background-image: url(../Multimedia/Docta.png);
+            @extend .crtbarrios;
+        }
+
+        .docta:hover {
+            @extend .hover;
+        }
+
+        .sietesoles {
+            grid-area: sietesoles;
+            grid-column: 1/2;
+            grid-row: 3/4;
+            background-image: url(../Multimedia/Sietesoles.png);
+            @extend .crtbarrios;
+        }
+
+        .sietesoles:hover {
+            @extend .hover;
+        }
+
+        .patagonia {
+            grid-area: patagonia;
+            grid-column: 2/3;
+            grid-row: 3/4;
+            background-image: url(../Multimedia/Patagonia.jpg);
+            @extend .crtbarrios;
+        }
+
+        .patagonia:hover {
+            @extend .hover;
+        }
+
+        .bosque {
+            grid-area: bosque;
+            grid-column: 1/2;
+            grid-row: 4/5;
+            background-image: url(../Multimedia/Bosque.jpg);
+            @extend .crtbarrios;
+        }
+
+        .bosque:hover {
+            @extend .hover;
+        }
+
+        .livette {
+            grid-area: livette;
+            grid-column: 2/3;
+            grid-row: 4/5;
+            background-image: url(../Multimedia/Livette.jpg);
+            @extend .crtbarrios;
+        }
+
+        .livette:hover {
+            @extend .hover;
+        }
+
+        .cañuelas {
+            grid-area: cañuelas;
+            grid-column: 1/2;
+            grid-row: 5/6;
+            background-color: white;
+            background-image: url(../Multimedia/Cañuelas.png);
+            @extend .crtbarrios;
+        }
+
+        .cañuelas:hover {
+            @extend .hover;
+        }
+
+        .delicias {
+            grid-area: delicias;
+            grid-column: 2/3;
+            grid-row: 5/6;
+            background-image: url(../Multimedia/Delicias.jpg);
+            @extend .crtbarrios;
+        }
+
+        .delicias:hover {
+            @extend .hover;
+        }
+
+        .prados {
+            grid-area: prados;
+            grid-column: 1/2;
+            grid-row: 6/7;
+            background-image: url(../Multimedia/Prados.jpg);
+            @extend .crtbarrios;
+        }
+
+        .prados:hover {
+            @extend .hover;
+        }
+
+        .cuesta {
+            grid-area: cuesta;
+            grid-column: 2/3;
+            grid-row: 6/7;
+            background-image: url(../Multimedia/Cuesta.png);
+            @extend .crtbarrios;
+        }
+
+        .cuesta:hover {
+            @extend .hover;
+        }
+    }
+
+    .mapa {
+        width: 100%;
+        padding: 20px;
+        border: 3px solid $color1;
+    }
+
     .fondocontact {
         background-color: $color3;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -385,13 +569,8 @@ footer{
 
 
 @media only screen and (max-width: 360px) {
-body {
-    height: auto;
-    margin-bottom: 0%;
-}
 
 header{
-
     .lavi{
         display: none;
     }
@@ -414,6 +593,10 @@ main{
             font-size: 15px;
             padding: auto;
         }
+    }
+
+    .titulosnosotros1 {
+        height: auto;
     }
 }
 
@@ -458,6 +641,10 @@ main {
     .card-title{
         font-size: 15px;
         padding: auto;
+    }
+
+    .titulosnosotros1 {
+        height: auto;
     }
 }
 footer{
@@ -573,6 +760,78 @@ main {
             border: 5px solid $color4;
         }
     }
+
+    .barrios {
+        height: 950px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "altos" "solares" "riberas"
+        "docta" "sietesoles" "patagonia"
+        "bosque" "livette" "cañuelas"
+        "delicias" "prados" "cuesta";
+
+        .altos {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .solares {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .riberas {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .docta {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .sietesoles {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .patagonia {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .bosque {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .livette {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        
+        .cañuelas {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .delicias {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        .prados {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+
+        .cuesta {
+            grid-column: 3/4;
+            grid-row: 4/5;
+        }
+    }
+
 }
 }
 
@@ -591,6 +850,76 @@ main{
     .nleft {
         background-position: top;
         height: $largo6;
+    }
+
+    .barrios {
+        height: 750px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "altos" "solares" "riberas" "docta" 
+        "sietesoles" "patagonia" "bosque" "livette"
+        "cañuelas" "delicias" "prados" "cuesta";
+
+        .altos {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .solares {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .riberas {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .docta {
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        .sietesoles {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .patagonia {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .bosque {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .livette {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        
+        .cañuelas {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .delicias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        .prados {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .cuesta {
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
     }
 }
 }

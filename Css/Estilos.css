@@ -1,14 +1,16 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
-  /* box-sizing: border-box; */
 }
 
 body {
   /* height: 100%; */
-  background-color: gainsboro;
-  background-position: center;
-  background-size: cover;
+  background-image: url(../Multimedia/Fondo.png);
+  position: relative;
+  width: 100%;
+  background-repeat: initial;
+  background-size: contain;
 }
 
 header .carousel-inner img {
@@ -196,11 +198,12 @@ main .galeriaservicios {
   gap: 30px 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-      grid-template-areas: "futbol" 
-"tenis"
-"natacion" 
-"training"
-"texto";
+      grid-template-areas: 
+      "futbol" 
+      "tenis"
+      "natacion" 
+      "training"
+      "texto";
 }
 
 main .galeriaservicios .futbol {
@@ -311,6 +314,208 @@ main .galeriaservicios .texto:hover {
   cursor: pointer;
 }
 
+main .crtbarrios, main .barrios .altos, main .barrios .riberas, main .barrios .solares, main .barrios .docta, main .barrios .sietesoles, main .barrios .patagonia, main .barrios .bosque, main .barrios .livette, main .barrios .cañuelas, main .barrios .delicias, main .barrios .prados, main .barrios .cuesta {
+  height: 200px;
+  width: 100%;
+  border: 5px solid green;
+  border-radius: 10px;
+  background-position: center;
+}
+
+main .barrios {
+  display: -ms-grid;
+  display: grid;
+  height: 1450px;
+  width: 100%;
+  background-color: #183d9b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  gap: 3% 10%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "altos" "riberas" 
+      "solares" "docta" 
+      "sietesoles" "patagonia" 
+      "bosque" "livette" 
+      "cañuelas" "delicias"
+      "prados" "cuesta";
+}
+
+main .barrios .hover, main .barrios .altos:hover, main .barrios .riberas:hover, main .barrios .solares:hover, main .barrios .docta:hover, main .barrios .sietesoles:hover, main .barrios .patagonia:hover, main .barrios .bosque:hover, main .barrios .livette:hover, main .barrios .cañuelas:hover, main .barrios .delicias:hover, main .barrios .prados:hover, main .barrios .cuesta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+main .barrios .altos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: altos;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-image: url(../Multimedia/Altos.png);
+}
+
+main .barrios .riberas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: riberas;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-image: url(../Multimedia/Riberas.jpg);
+}
+
+main .barrios .solares {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: solares;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-image: url(../Multimedia/Solares.jpg);
+}
+
+main .barrios .docta {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: docta;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-image: url(../Multimedia/Docta.png);
+}
+
+main .barrios .sietesoles {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: sietesoles;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-image: url(../Multimedia/Sietesoles.png);
+}
+
+main .barrios .patagonia {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: patagonia;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-image: url(../Multimedia/Patagonia.jpg);
+}
+
+main .barrios .bosque {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: bosque;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background-image: url(../Multimedia/Bosque.jpg);
+}
+
+main .barrios .livette {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: livette;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background-image: url(../Multimedia/Livette.jpg);
+}
+
+main .barrios .cañuelas {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: cañuelas;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  background-color: white;
+  background-image: url(../Multimedia/Cañuelas.png);
+}
+
+main .barrios .delicias {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: delicias;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  background-image: url(../Multimedia/Delicias.jpg);
+}
+
+main .barrios .prados {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: prados;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  background-image: url(../Multimedia/Prados.jpg);
+}
+
+main .barrios .cuesta {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: cuesta;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  background-image: url(../Multimedia/Cuesta.png);
+}
+
+main .mapa {
+  width: 100%;
+  padding: 20px;
+  border: 3px solid green;
+}
+
 main .fondocontact {
   background-color: gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -379,8 +584,9 @@ footer .foter .redes {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-      grid-template-areas: "facebook instagram whatsapp"
-"email email email";
+      grid-template-areas: 
+      "facebook instagram whatsapp"
+      "email email email";
 }
 
 footer .foter .redes .facebook {
@@ -418,10 +624,6 @@ footer .foter .redes footer a img {
 }
 
 @media only screen and (max-width: 360px) {
-  body {
-    height: auto;
-    margin-bottom: 0%;
-  }
   header .lavi {
     display: none;
   }
@@ -442,6 +644,9 @@ footer .foter .redes footer a img {
   main .card .card-title {
     font-size: 15px;
     padding: auto;
+  }
+  main .titulosnosotros1 {
+    height: auto;
   }
   footer .acercade {
     display: none;
@@ -481,6 +686,9 @@ footer .foter .redes footer a img {
     font-size: 15px;
     padding: auto;
   }
+  main .titulosnosotros1 {
+    height: auto;
+  }
   footer .acercade {
     display: none;
   }
@@ -507,9 +715,10 @@ footer .foter .redes footer a img {
         grid-template-rows: 40% 20% 40%;
     gap: 0% 0%;
     padding: 20px;
-        grid-template-areas: "futbol . tenis"
-"texto texto texto"
-"natacion . training";
+        grid-template-areas: 
+        "futbol . tenis"
+        "texto texto texto"
+        "natacion . training";
   }
   main .galeriaservicios .futbol {
     height: 200px;
@@ -569,6 +778,114 @@ footer .foter .redes footer a img {
     height: 300px;
     border: 5px solid white;
   }
+  main .barrios {
+    height: 950px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "altos" "solares" "riberas"
+        "docta" "sietesoles" "patagonia"
+        "bosque" "livette" "cañuelas"
+        "delicias" "prados" "cuesta";
+  }
+  main .barrios .altos {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .solares {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .riberas {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .docta {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .sietesoles {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .patagonia {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .bosque {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .livette {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .cañuelas {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .delicias {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  main .barrios .prados {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
+  main .barrios .cuesta {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -581,6 +898,113 @@ footer .foter .redes footer a img {
   main .nleft {
     background-position: top;
     height: 400px;
+  }
+  main .barrios {
+    height: 750px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "altos" "solares" "riberas" "docta" 
+        "sietesoles" "patagonia" "bosque" "livette"
+        "cañuelas" "delicias" "prados" "cuesta";
+  }
+  main .barrios .altos {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .solares {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .riberas {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .docta {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main .barrios .sietesoles {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .patagonia {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .bosque {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .livette {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  main .barrios .cañuelas {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .delicias {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .prados {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  main .barrios .cuesta {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
