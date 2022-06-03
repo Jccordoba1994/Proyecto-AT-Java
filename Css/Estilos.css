@@ -5,8 +5,9 @@
 }
 
 body {
-  /* height: 100%; */
-  background-image: url(../Multimedia/Fondo.png);
+  height: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#183d9b), color-stop(gray), to(#183d9b));
+  background-image: linear-gradient(#183d9b, gray, #183d9b);
   position: relative;
   width: 100%;
   background-repeat: initial;
@@ -33,9 +34,8 @@ header .lavi {
 }
 
 .navbar {
-  background-color: green;
+  background-color: #326b32;
   color: black;
-  /* margin-bottom: 20px; */
 }
 
 .navbar a {
@@ -48,7 +48,11 @@ header .lavi {
 }
 
 .navbar-brand:hover {
-  background-color: green !important;
+  background-color: #326b32 !important;
+}
+
+main {
+  height: auto;
 }
 
 main .titulo1 {
@@ -57,59 +61,95 @@ main .titulo1 {
   margin-top: 10px;
   font-size: 25px;
   color: white;
-  background-color: green;
+  background-color: #326b32;
 }
 
-main .nleft {
+main .conte {
+  height: 450px;
+  width: 100%;
+}
+
+main .conte section {
+  position: relative;
   height: 300px;
   width: 100%;
-  background-image: url("../Multimedia/Portada AT.png");
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  /* margin-left: 30px; */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
-main .nright {
-  background-color: #183d9b;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: white;
+main .conte section img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
-main .nleft:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main .conte section .nleft {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  background: rgba(12, 103, 123, 0.7);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+main .conte section:hover > .nleft {
+  opacity: 1;
+  visibility: visible;
+}
+
+main .actividades {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
 }
 
 main .act--colo1 {
   color: white;
   height: auto;
-  background-color: #ebb4bd;
+  width: auto;
+  padding: 20px;
+  margin: 15px;
+  background-color: #5eac6d;
   border-radius: 5px;
 }
 
 main .act--colo2 {
   color: white;
   height: auto;
-  background-color: #e7aab4;
+  width: auto;
+  padding: 20px;
+  margin: 15px;
+  background-color: #367145;
   border-radius: 5px;
 }
 
 main .act--colo3 {
   color: white;
   height: auto;
-  background-color: #ebb4bd;
+  width: auto;
+  padding: 20px;
+  margin: 15px;
+  background-color: #5eac6d;
   border-radius: 5px;
 }
 
 main .act--colo4 {
   color: white;
   height: auto;
-  background-color: #e7aab4;
+  width: auto;
+  padding: 20px;
+  margin: 15px;
+  background-color: #367145;
   border-radius: 5px;
 }
 
@@ -136,18 +176,20 @@ main .titulosnosotros:hover {
   cursor: pointer;
 }
 
-main .card {
+main .nosotros-fila .card {
   width: 250px;
   text-align: center;
+  margin: auto;
+  margin-top: 10px;
 }
 
-main .card .card-img-top {
+main .nosotros-fila .card .card-img-top {
   height: 300px;
   width: 250px;
   border: 5px solid white;
 }
 
-main .card .card-img-top:hover {
+main .nosotros-fila .card .card-img-top:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.5s;
@@ -156,8 +198,8 @@ main .card .card-img-top:hover {
 }
 
 main .titulosnosotros1 {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-  background-image: linear-gradient(to top, white, gray, green);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#326b32));
+  background-image: linear-gradient(to top, white, gray, #326b32);
 }
 
 main .titulosnosotros1:hover {
@@ -184,9 +226,8 @@ main .titulosnosotros2:hover {
 main .galeriaservicios {
   display: -ms-grid;
   display: grid;
-  height: 642px;
+  height: 900px;
   width: 100%;
-  background-color: gray;
   padding: 20px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -198,51 +239,89 @@ main .galeriaservicios {
   gap: 30px 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-      grid-template-areas: 
-      "futbol" 
-      "tenis"
-      "natacion" 
-      "training"
-      "texto";
+      grid-template-areas: "futbol" 
+  "tenis"
+  "natacion" 
+  "training"
+  "texto";
+}
+
+main .galeriaservicios .imgservicios, main .galeriaservicios .futbol, main .galeriaservicios .tenis, main .galeriaservicios .natacion, main .galeriaservicios .training {
+  position: relative;
+  background-position: center;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .galeriaservicios .imgservicios img, main .galeriaservicios .futbol img, main .galeriaservicios .tenis img, main .galeriaservicios .natacion img, main .galeriaservicios .training img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
 main .galeriaservicios .futbol {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: futbol;
-  height: 100px;
+  height: 150px;
   border: 2px solid #000;
   border-radius: 20px;
-  background-image: url(../Multimedia/Futbol.jpeg);
-  background-position: center;
 }
 
-main .galeriaservicios .futbol:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main .galeriaservicios .futbol a .servi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  top: 0%;
+  padding-top: 25%;
+  background: rgba(12, 103, 123, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+main .galeriaservicios .futbol:hover > a .servi {
   cursor: pointer;
+  opacity: 1;
+  visibility: visible;
 }
 
 main .galeriaservicios .tenis {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: tenis;
-  height: 100px;
+  height: 150px;
   border-radius: 20px;
   border: 2px solid #000;
-  background-image: url(../Multimedia/Tenis.jpg);
-  background-position: center;
-  -webkit-box-shadow: 0 0 5px #333;
-          box-shadow: 0 0 5px #333;
 }
 
-main .galeriaservicios .tenis:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main .galeriaservicios .tenis a .servi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  top: 0%;
+  padding-top: 25%;
+  background: rgba(193, 243, 185, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+main .galeriaservicios .tenis:hover > a .servi {
+  opacity: 1;
+  visibility: visible;
   cursor: pointer;
 }
 
@@ -250,18 +329,29 @@ main .galeriaservicios .natacion {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: natacion;
-  height: 100px;
+  height: 150px;
   border-radius: 20px;
   border: 2px solid #000;
-  background-image: url(../Multimedia/Natacion.jpeg);
-  background-position: center;
 }
 
-main .galeriaservicios .natacion:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main .galeriaservicios .natacion a .servi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  top: 0%;
+  padding-top: 25%;
+  background: rgba(232, 244, 105, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+main .galeriaservicios .natacion:hover > a .servi {
+  opacity: 1;
+  visibility: visible;
   cursor: pointer;
 }
 
@@ -269,18 +359,29 @@ main .galeriaservicios .training {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: training;
-  height: 100px;
+  height: 150px;
   border-radius: 20px;
   border: 2px solid #000;
-  background-image: url(../Multimedia/Training.jpeg);
-  background-position: center;
 }
 
-main .galeriaservicios .training:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+main .galeriaservicios .training a .servi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  top: 0%;
+  padding-top: 25%;
+  background: rgba(244, 105, 105, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+main .galeriaservicios .training:hover > a .servi {
+  opacity: 1;
+  visibility: visible;
   cursor: pointer;
 }
 
@@ -289,9 +390,10 @@ main .galeriaservicios .texto {
   -ms-grid-column: 1;
   grid-area: texto;
   width: 100%;
+  height: 55px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(green), color-stop(gray), to(white));
-  background-image: linear-gradient(to right, green, gray, white);
+  background-image: -webkit-gradient(linear, left top, right top, from(#326b32), color-stop(gray), to(white));
+  background-image: linear-gradient(to right, #326b32, gray, white);
   border-radius: 15px;
 }
 
@@ -300,7 +402,7 @@ main .galeriaservicios .texto a {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 40px;
-  color: green;
+  color: #326b32;
   background-color: gainsboro;
   border-radius: 15px;
   text-decoration: none;
@@ -317,9 +419,14 @@ main .galeriaservicios .texto:hover {
 main .crtbarrios, main .barrios .altos, main .barrios .riberas, main .barrios .solares, main .barrios .docta, main .barrios .sietesoles, main .barrios .patagonia, main .barrios .bosque, main .barrios .livette, main .barrios .cañuelas, main .barrios .delicias, main .barrios .prados, main .barrios .cuesta {
   height: 200px;
   width: 100%;
-  border: 5px solid green;
+  border: 5px solid #326b32;
   border-radius: 10px;
   background-position: center;
+}
+
+main .crtbarrios img, main .barrios .altos img, main .barrios .riberas img, main .barrios .solares img, main .barrios .docta img, main .barrios .sietesoles img, main .barrios .patagonia img, main .barrios .bosque img, main .barrios .livette img, main .barrios .cañuelas img, main .barrios .delicias img, main .barrios .prados img, main .barrios .cuesta img {
+  height: 100%;
+  width: 100%;
 }
 
 main .barrios {
@@ -327,7 +434,6 @@ main .barrios {
   display: grid;
   height: 1450px;
   width: 100%;
-  background-color: #183d9b;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
@@ -336,13 +442,12 @@ main .barrios {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: 
-      "altos" "riberas" 
-      "solares" "docta" 
-      "sietesoles" "patagonia" 
-      "bosque" "livette" 
-      "cañuelas" "delicias"
-      "prados" "cuesta";
+      grid-template-areas: "altos" "riberas" 
+  "solares" "docta" 
+  "sietesoles" "patagonia" 
+  "bosque" "livette" 
+  "cañuelas" "delicias"
+  "prados" "cuesta";
 }
 
 main .barrios .hover, main .barrios .altos:hover, main .barrios .riberas:hover, main .barrios .solares:hover, main .barrios .docta:hover, main .barrios .sietesoles:hover, main .barrios .patagonia:hover, main .barrios .bosque:hover, main .barrios .livette:hover, main .barrios .cañuelas:hover, main .barrios .delicias:hover, main .barrios .prados:hover, main .barrios .cuesta:hover {
@@ -363,7 +468,13 @@ main .barrios .altos {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url(../Multimedia/Altos.png);
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .barrios .riberas {
@@ -376,7 +487,6 @@ main .barrios .riberas {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-image: url(../Multimedia/Riberas.jpg);
 }
 
 main .barrios .solares {
@@ -389,7 +499,6 @@ main .barrios .solares {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url(../Multimedia/Solares.jpg);
 }
 
 main .barrios .docta {
@@ -402,7 +511,6 @@ main .barrios .docta {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-image: url(../Multimedia/Docta.png);
 }
 
 main .barrios .sietesoles {
@@ -415,7 +523,6 @@ main .barrios .sietesoles {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  background-image: url(../Multimedia/Sietesoles.png);
 }
 
 main .barrios .patagonia {
@@ -428,7 +535,6 @@ main .barrios .patagonia {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  background-image: url(../Multimedia/Patagonia.jpg);
 }
 
 main .barrios .bosque {
@@ -441,7 +547,6 @@ main .barrios .bosque {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  background-image: url(../Multimedia/Bosque.jpg);
 }
 
 main .barrios .livette {
@@ -454,7 +559,6 @@ main .barrios .livette {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  background-image: url(../Multimedia/Livette.jpg);
 }
 
 main .barrios .cañuelas {
@@ -467,8 +571,6 @@ main .barrios .cañuelas {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
-  background-color: white;
-  background-image: url(../Multimedia/Cañuelas.png);
 }
 
 main .barrios .delicias {
@@ -481,7 +583,6 @@ main .barrios .delicias {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
-  background-image: url(../Multimedia/Delicias.jpg);
 }
 
 main .barrios .prados {
@@ -494,7 +595,6 @@ main .barrios .prados {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
-  background-image: url(../Multimedia/Prados.jpg);
 }
 
 main .barrios .cuesta {
@@ -507,17 +607,15 @@ main .barrios .cuesta {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
-  background-image: url(../Multimedia/Cuesta.png);
 }
 
 main .mapa {
   width: 100%;
   padding: 20px;
-  border: 3px solid green;
+  border: 3px solid #326b32;
 }
 
 main .fondocontact {
-  background-color: gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px;
   text-align: center;
@@ -528,27 +626,21 @@ main .consulta {
   margin-top: 20px;
   padding: 10px;
   font-size: 25px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-  background-image: linear-gradient(to top, white, gray, green);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#326b32));
+  background-image: linear-gradient(to top, white, gray, #326b32);
 }
 
 main .trabajanosotros {
   margin-top: 20px;
   padding: 10px;
   font-size: 25px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(green));
-  background-image: linear-gradient(to top, white, gray, green);
-}
-
-main .nosotros {
-  background-color: #a8a6a6;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#326b32));
+  background-image: linear-gradient(to top, white, gray, #326b32);
 }
 
 footer .foter {
   height: 200px;
   width: auto;
-  margin-top: 10px;
-  background-color: #183d9b;
   margin-top: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -584,9 +676,8 @@ footer .foter .redes {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-      grid-template-areas: 
-      "facebook instagram whatsapp"
-      "email email email";
+      grid-template-areas: "facebook instagram whatsapp"
+  "email email email";
 }
 
 footer .foter .redes .facebook {
@@ -624,28 +715,44 @@ footer .foter .redes footer a img {
 }
 
 @media only screen and (max-width: 360px) {
+  header .carousel-inner img {
+    height: 150px;
+  }
+  header .logoat {
+    height: 100px !important;
+    width: 100px !important;
+  }
   header .lavi {
     display: none;
+  }
+  .navbar {
+    height: 150px;
+  }
+  main .titulo1 {
+    font-size: 20px;
+  }
+  main .conte {
+    height: 350px;
+  }
+  main .conte section {
+    height: 300px !important;
+    width: 340px !important;
+    margin-top: 0px !important;
+  }
+  main .conte section .nleft h3 {
+    padding-top: 20px;
+  }
+  main .act--colo1 h3, main .act--colo2 h3, main .act--colo3 h3, main .act--colo4 h3 {
+    font-size: 20px;
+  }
+  main .act--colo1 p, main .act--colo2 p, main .act--colo3 p, main .act--colo4 p {
+    font-size: 15px;
   }
   main .btn {
     height: 35px;
     width: 100px;
   }
-  main .card {
-    height: 340px;
-    width: 150px;
-    margin-top: 10px;
-  }
-  main .card .card-img-top {
-    height: 200px;
-    width: 150px;
-    border: 5px solid white;
-  }
-  main .card .card-title {
-    font-size: 15px;
-    padding: auto;
-  }
-  main .titulosnosotros1 {
+  main .losnosotros1 {
     height: auto;
   }
   footer .acercade {
@@ -655,7 +762,7 @@ footer .foter .redes footer a img {
     display: none;
   }
   footer .foter {
-    height: 120px;
+    height: 100px;
   }
 }
 
@@ -663,28 +770,41 @@ footer .foter .redes footer a img {
   header {
     width: 100%;
   }
+  header .carousel-inner img {
+    height: 200px;
+  }
+  header .logoat {
+    height: 120px !important;
+    width: 120px !important;
+  }
+  header .lavi {
+    display: none;
+  }
   main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  main .conte {
+    height: 350px;
+  }
+  main .conte section {
+    height: 300px !important;
+    width: 90% !important;
+    margin-top: 0px !important;
+  }
+  main .conte section .nleft h3 {
+    padding-top: 40px;
+  }
+  main .act--colo1 h3, main .act--colo2 h3, main .act--colo3 h3, main .act--colo4 h3 {
+    font-size: 20px;
+  }
+  main .act--colo1 p, main .act--colo2 p, main .act--colo3 p, main .act--colo4 p {
+    font-size: 15px;
+  }
   main .btn {
     height: 35px;
     width: 100px;
-  }
-  main .card {
-    height: 440px;
-    width: 250px;
-    margin: 10px;
-  }
-  main .card-img-top {
-    height: 200px;
-    width: 250px;
-    border: 5px solid white;
-  }
-  main .card-title {
-    font-size: 15px;
-    padding: auto;
   }
   main .titulosnosotros1 {
     height: auto;
@@ -701,41 +821,36 @@ footer .foter .redes footer a img {
   }
 }
 
-@media only screen and (min-width: 470px) and (max-width: 575px) {
-  main .nleft {
-    background-image: url("../Multimedia/Portada AT1.png");
-  }
-}
-
 @media only screen and (min-width: 500px) {
   main .galeriaservicios {
-    -ms-grid-columns: 40% 20% 40%;
-        grid-template-columns: 40% 20% 40%;
-    -ms-grid-rows: 40% 20% 40%;
-        grid-template-rows: 40% 20% 40%;
+    -ms-grid-columns: 45% 10% 45%;
+        grid-template-columns: 45% 10% 45%;
+    -ms-grid-rows: 45% 10% 45%;
+        grid-template-rows: 45% 10% 45%;
     gap: 0% 0%;
-    padding: 20px;
-        grid-template-areas: 
-        "futbol . tenis"
-        "texto texto texto"
-        "natacion . training";
+    padding: 10px;
+        grid-template-areas: "futbol . tenis"
+  "texto texto texto"
+  "natacion . training";
   }
   main .galeriaservicios .futbol {
-    height: 200px;
+    height: 300px;
   }
   main .galeriaservicios .tenis {
-    height: 200px;
+    height: 300px;
   }
   main .galeriaservicios .natacion {
-    height: 200px;
+    margin-top: 80px;
+    height: 300px;
   }
   main .galeriaservicios .training {
-    height: 200px;
+    margin-top: 80px;
+    height: 300px;
   }
   main .galeriaservicios .texto {
-    margin-bottom: 40px;
-    margin-top: 5px;
-    /* transform: scale(1.1); */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 70px;
   }
   main .galeriaservicios .texto a {
     font-size: 50px;
@@ -761,14 +876,20 @@ footer .foter .redes footer a img {
 
 @media only screen and (min-width: 600px) {
   header {
-    /* height: 220px; */
     width: 100%;
-    background-image: url(../multimedia/ATfondo.jpg);
+    background-image: url(../Multimedia/integrantesat.jpg);
     background-position: center;
     background-attachment: fixed;
   }
   header .lavi {
     font-size: 25px;
+  }
+  main .conte section {
+    height: 450px !important;
+    width: 90% !important;
+  }
+  main .conte section .nleft h3 {
+    padding-top: 80px;
   }
   main .card {
     margin: 10px;
@@ -784,11 +905,10 @@ footer .foter .redes footer a img {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "altos" "solares" "riberas"
-        "docta" "sietesoles" "patagonia"
-        "bosque" "livette" "cañuelas"
-        "delicias" "prados" "cuesta";
+        grid-template-areas: "altos" "solares" "riberas"
+  "docta" "sietesoles" "patagonia"
+  "bosque" "livette" "cañuelas"
+  "delicias" "prados" "cuesta";
   }
   main .barrios .altos {
     -ms-grid-column: 1;
@@ -888,16 +1008,21 @@ footer .foter .redes footer a img {
   }
 }
 
-@media only screen and (min-width: 800px) {
-  main .nleft {
-    background-image: url("../Multimedia/Portada AT1.png");
-  }
-}
-
 @media only screen and (min-width: 1000px) {
-  main .nleft {
-    background-position: top;
+  main .conte {
+    margin-left: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+  }
+  main .conte .nleft {
+    background-position: center;
     height: 400px;
+    width: 700px;
+    padding: 20px;
+    padding-top: 100px;
+    font-size: 20px;
   }
   main .barrios {
     height: 750px;
@@ -905,10 +1030,9 @@ footer .foter .redes footer a img {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "altos" "solares" "riberas" "docta" 
-        "sietesoles" "patagonia" "bosque" "livette"
-        "cañuelas" "delicias" "prados" "cuesta";
+        grid-template-areas: "altos" "solares" "riberas" "docta" 
+  "sietesoles" "patagonia" "bosque" "livette"
+  "cañuelas" "delicias" "prados" "cuesta";
   }
   main .barrios .altos {
     -ms-grid-column: 1;
