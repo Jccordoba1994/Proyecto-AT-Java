@@ -119,11 +119,9 @@ dudas (consulta); */
 
         let datos = (new registroConsultas (nombre, telefono, email, consultas));
         consulta.push(datos);
-
-        // registroConsultas (consulta);
     };
 
-        registroConsultas (consulta);
+        validarFormulario (consulta);
 
     function registro() {
         for (const registroConsultas of consulta) {
@@ -131,7 +129,6 @@ dudas (consulta); */
             registro(registroConsultas);
         }
     }
-        /* registro(registroConsultas); */
 
     function guardar() {
         let consulta = registro ();
@@ -139,6 +136,37 @@ dudas (consulta); */
     } 
     guardar ();
 
+    let formulario1 = document.getElementById("formulario1");
+    formulario1.addEventListener("submit", validarFormulario1);
+
+    let consulta1 = [];
+    localStorage.setItem("consulta", JSON.stringify(consulta1))
+
+    function validarFormulario1(e) {
+        e.preventDefault();
+        let nombre = document.getElementById("nombreyapellido").value;
+        let telefono = document.getElementById("telefono").value;
+        let email = document.getElementById("email").value;
+        let consultas = document.getElementById("comentarios").value;
+
+        let datos = (new registroConsultas (nombre, telefono, email, consultas));
+        consulta.push(datos);
+    };
+
+        validarFormulario1 (consulta);
+
+    function registroConsulta1() {
+        for (const registroConsultas of consulta) {
+            // console.log(registroConsultas);
+            registroConsulta1(registroConsultas);
+        }
+    }
+
+    function guardar() {
+        let consulta = registro ();
+        registro (consulta);
+    } 
+    guardar ();
 
 
 
