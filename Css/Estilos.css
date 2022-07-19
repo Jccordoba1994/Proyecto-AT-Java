@@ -282,7 +282,7 @@ main .galeriaservicios .futbol a .servi {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   top: 0%;
-  padding-top: 25%;
+  padding-top: 5%;
   background: rgba(12, 103, 123, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -312,7 +312,7 @@ main .galeriaservicios .tenis a .servi {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   top: 0%;
-  padding-top: 25%;
+  padding-top: 5%;
   background: rgba(193, 243, 185, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -342,7 +342,7 @@ main .galeriaservicios .natacion a .servi {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   top: 0%;
-  padding-top: 25%;
+  padding-top: 5%;
   background: rgba(232, 244, 105, 0.7);
   opacity: 0;
   visibility: hidden;
@@ -372,7 +372,7 @@ main .galeriaservicios .training a .servi {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   top: 0%;
-  padding-top: 25%;
+  padding-top: 5%;
   background: rgba(244, 105, 105, 0.7);
   opacity: 0;
   visibility: hidden;
