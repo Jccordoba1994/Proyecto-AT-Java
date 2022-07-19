@@ -149,7 +149,7 @@ dudas (consulta); */
         let email = document.getElementById("email").value;
         let consultas = document.getElementById("comentarios").value;
 
-        let datos = (new registroConsultas (nombre, telefono, email, consultas));
+        let datos = (new registroConsulta1 (nombre, telefono, email, consultas));
         consulta.push(datos);
     };
 
