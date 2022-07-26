@@ -104,7 +104,7 @@ function dudas (consulta) {
 }
 dudas (consulta); */
 
-/* const abrirModal1 = document.querySelector(`.abrirmodal`);
+const abrirModal1 = document.querySelector(`.abrirmodal`);
 const modal1 = document.querySelector(`.modal1`);
 const cerrarModal1 = document.querySelector(`.modal__close`)
 
@@ -116,7 +116,7 @@ abrirModal1.addEventListener(`click`, () => {
 cerrarModal1.addEventListener(`click`, () => {
     e.preventDefault();
     modal1.classList.remove(`modal--show`)
-}); */
+});
 
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", validarFormulario);
@@ -142,6 +142,8 @@ function validarFormulario(e) {
 
     let datos = (new registroConsulta (nombre, telefono, email, consultas));
     consulta.push(datos);
+
+    formulario.reset ();
 };
 
 let btn = document.getElementById("enviar");
@@ -179,6 +181,8 @@ function validarFormulario1(e) {
 
     let datos = (new registroConsulta1 (nombre, telefono, email, consultas));
     consulta.push(datos);
+
+    formulario.reset ();
 };
 
 let btn1 = document.getElementById("enviar1");
