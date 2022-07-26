@@ -398,10 +398,34 @@ main{
         transition: opacity .6s;
     }
 
-    .modal--show{
+    .modal2 {
+        @extend .modal1;
+    }
+
+    .modal3 {
+        @extend .modal1;
+    }
+
+    .modal4 {
+        @extend .modal1;
+    }
+
+    .modal--show1{
         opacity: 1;
         pointer-events: unset;
         transition: opacity .6s;
+    }
+
+    .modal--show2{
+        @extend .modal--show1;
+    }
+
+    .modal--show3{
+        @extend .modal--show1;
+    }
+
+    .modal--show4{
+        @extend .modal--show1;
     }
 
     .modal__container {
@@ -410,17 +434,17 @@ main{
         max-width: 600px;
         max-height: 90%;
         border-radius: 6px;
-        padding: 30px;
+        padding: 50px 40px;
         background-color: white;
         display: grid;
-        gap: 10px;
+        gap: 16px;
         place-items: center;
         grid-auto-columns: 100%;
     }
 
     .modal__tittle {
         font-size: 35px;
-        color: #000;
+        color: black;
     }
 
     .modal__img {
@@ -428,22 +452,47 @@ main{
         max-width: 300px;
     }
 
-    .modal__close{
+    .modal__close1{
         text-decoration: none;
         color: #fff;
         background-color: #f62250;
         padding: 16px 50px;
-        border:1px solid;
+        border: 1px solid;
         border-radius: 6px;
         display: inline-block;
         font-weight: 300;
         transition: background-color .3s;
     }
 
-    .modal__close:hover{
+    .modal__close1:hover{
         color: #f62250;
         background-color: #fff;
     }
+
+    .modal__close2{
+        @extend .modal__close1;
+    }
+
+    .modal__close3{
+        @extend .modal__close1;
+    }
+
+    .modal__close4{
+        @extend .modal__close1;
+    }
+
+    .modal__close2:hover{
+        @extend .modal__close1:hover;
+    }
+
+    .modal__close3:hover{
+        @extend .modal__close1:hover;
+    }
+
+    .modal__close4:hover{
+        @extend .modal__close1:hover;
+    }
+
     .crtbarrios {
         @include sizes($largo6, $ancho1); 
         border: 5px solid $color1;

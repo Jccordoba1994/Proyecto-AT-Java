@@ -104,19 +104,60 @@ function dudas (consulta) {
 }
 dudas (consulta); */
 
-const abrirModal1 = document.querySelector(`.abrirmodal`);
+const abrirModal1 = document.querySelector(`.abrirmodal1`);
+const abrirModal2 = document.querySelector(`.abrirmodal2`);
+const abrirmodal3 = document.querySelector(`.abrirmodal3`);
+const abrirmodal4 = document.querySelector(`.abrirmodal4`);
 const modal1 = document.querySelector(`.modal1`);
-const cerrarModal1 = document.querySelector(`.modal__close`)
+const modal2 = document.querySelector(`.modal2`);
+const modal3 = document.querySelector(`.modal3`);
+const modal4 = document.querySelector(`.modal4`);
+const cerrarModal1 = document.querySelector(`.modal__close1`);
+const cerrarModal2 = document.querySelector(`.modal__close2`);
+const cerrarModal3 = document.querySelector(`.modal__close3`);
+const cerrarModal4 = document.querySelector(`.modal__close4`);
 
-abrirModal1.addEventListener(`click`, () => {
+abrirModal1.addEventListener (`click`, (e) => {
     e.preventDefault();
-    modal1.classList.add(`modal--show`)
+    modal1.classList.add(`modal--show1`);
 });
 
-cerrarModal1.addEventListener(`click`, () => {
+cerrarModal1.addEventListener(`click`, (e) => {
     e.preventDefault();
-    modal1.classList.remove(`modal--show`)
+    modal1.classList.remove(`modal--show1`)
 });
+
+abrirModal2.addEventListener (`click`, (e) => {
+    e.preventDefault();
+    modal2.classList.add(`modal--show2`);
+});
+
+cerrarModal2.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    modal2.classList.remove(`modal--show2`)
+});
+
+abrirmodal3.addEventListener (`click`, (e) => {
+    e.preventDefault();
+    modal3.classList.add(`modal--show3`);
+});
+
+cerrarModal3.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    modal3.classList.remove(`modal--show3`)
+});
+
+abrirmodal4.addEventListener (`click`, (e) => {
+    e.preventDefault();
+    modal4.classList.add(`modal--show4`);
+});
+
+cerrarModal4.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    modal4.classList.remove(`modal--show4`)
+});
+
+
 
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", validarFormulario);

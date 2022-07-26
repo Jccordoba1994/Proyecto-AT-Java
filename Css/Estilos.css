@@ -412,7 +412,7 @@ main .galeriaservicios .texto:hover {
   cursor: pointer;
 }
 
-main .modal1 {
+main .modal1, main .modal2, main .modal3, main .modal4 {
   position: fixed;
   top: 0;
   left: 0;
@@ -428,7 +428,7 @@ main .modal1 {
   transition: opacity .6s;
 }
 
-main .modal--show {
+main .modal--show1, main .modal--show2, main .modal--show3, main .modal--show4 {
   opacity: 1;
   pointer-events: unset;
   -webkit-transition: opacity .6s;
@@ -441,18 +441,18 @@ main .modal__container {
   max-width: 600px;
   max-height: 90%;
   border-radius: 6px;
-  padding: 30px;
+  padding: 50px 40px;
   background-color: white;
   display: -ms-grid;
   display: grid;
-  gap: 10px;
+  gap: 16px;
   place-items: center;
   grid-auto-columns: 100%;
 }
 
 main .modal__tittle {
   font-size: 35px;
-  color: #000;
+  color: black;
 }
 
 main .modal__img {
@@ -460,7 +460,7 @@ main .modal__img {
   max-width: 300px;
 }
 
-main .modal__close {
+main .modal__close1, main .modal__close2, main .modal__close3, main .modal__close4 {
   text-decoration: none;
   color: #fff;
   background-color: #f62250;
@@ -473,7 +473,7 @@ main .modal__close {
   transition: background-color .3s;
 }
 
-main .modal__close:hover {
+main .modal__close1:hover, main .modal__close2:hover, main .modal__close3:hover, main .modal__close4:hover {
   color: #f62250;
   background-color: #fff;
 }
