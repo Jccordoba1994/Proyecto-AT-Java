@@ -239,11 +239,7 @@ main .galeriaservicios {
   gap: 30px 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-      grid-template-areas: "futbol" 
-  "tenis"
-  "natacion" 
-  "training"
-  "texto";
+      grid-template-areas: "futbol"  "tenis" "natacion"  "training" "texto";
 }
 
 main .galeriaservicios .imgservicios, main .galeriaservicios .futbol, main .galeriaservicios .tenis, main .galeriaservicios .natacion, main .galeriaservicios .training {
@@ -416,6 +412,72 @@ main .galeriaservicios .texto:hover {
   cursor: pointer;
 }
 
+main .modal1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+main .modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+main .modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 30px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  place-items: center;
+  grid-auto-columns: 100%;
+}
+
+main .modal__tittle {
+  font-size: 35px;
+  color: #000;
+}
+
+main .modal__img {
+  width: 90%;
+  max-width: 300px;
+}
+
+main .modal__close {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f62250;
+  padding: 16px 50px;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+main .modal__close:hover {
+  color: #f62250;
+  background-color: #fff;
+}
+
 main .crtbarrios, main .barrios .altos, main .barrios .riberas, main .barrios .solares, main .barrios .docta, main .barrios .sietesoles, main .barrios .patagonia, main .barrios .bosque, main .barrios .livette, main .barrios .cañuelas, main .barrios .delicias, main .barrios .prados, main .barrios .cuesta {
   height: 200px;
   width: 100%;
@@ -442,12 +504,7 @@ main .barrios {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "altos" "riberas" 
-  "solares" "docta" 
-  "sietesoles" "patagonia" 
-  "bosque" "livette" 
-  "cañuelas" "delicias"
-  "prados" "cuesta";
+      grid-template-areas: "altos" "riberas"  "solares" "docta"  "sietesoles" "patagonia"  "bosque" "livette"  "cañuelas" "delicias" "prados" "cuesta";
 }
 
 main .barrios .hover, main .barrios .altos:hover, main .barrios .riberas:hover, main .barrios .solares:hover, main .barrios .docta:hover, main .barrios .sietesoles:hover, main .barrios .patagonia:hover, main .barrios .bosque:hover, main .barrios .livette:hover, main .barrios .cañuelas:hover, main .barrios .delicias:hover, main .barrios .prados:hover, main .barrios .cuesta:hover {
@@ -676,8 +733,7 @@ footer .foter .redes {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-      grid-template-areas: "facebook instagram whatsapp"
-  "email email email";
+      grid-template-areas: "facebook instagram whatsapp" "email email email";
 }
 
 footer .foter .redes .facebook {
@@ -829,9 +885,7 @@ footer .foter .redes footer a img {
         grid-template-rows: 45% 10% 45%;
     gap: 0% 0%;
     padding: 10px;
-        grid-template-areas: "futbol . tenis"
-  "texto texto texto"
-  "natacion . training";
+        grid-template-areas: "futbol . tenis" "texto texto texto" "natacion . training";
   }
   main .galeriaservicios .futbol {
     height: 300px;
@@ -905,10 +959,7 @@ footer .foter .redes footer a img {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "altos" "solares" "riberas"
-  "docta" "sietesoles" "patagonia"
-  "bosque" "livette" "cañuelas"
-  "delicias" "prados" "cuesta";
+        grid-template-areas: "altos" "solares" "riberas" "docta" "sietesoles" "patagonia" "bosque" "livette" "cañuelas" "delicias" "prados" "cuesta";
   }
   main .barrios .altos {
     -ms-grid-column: 1;
@@ -1030,9 +1081,7 @@ footer .foter .redes footer a img {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "altos" "solares" "riberas" "docta" 
-  "sietesoles" "patagonia" "bosque" "livette"
-  "cañuelas" "delicias" "prados" "cuesta";
+        grid-template-areas: "altos" "solares" "riberas" "docta"  "sietesoles" "patagonia" "bosque" "livette" "cañuelas" "delicias" "prados" "cuesta";
   }
   main .barrios .altos {
     -ms-grid-column: 1;

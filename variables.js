@@ -104,70 +104,115 @@ function dudas (consulta) {
 }
 dudas (consulta); */
 
-    let formulario = document.getElementById("formulario");
-    formulario.addEventListener("submit", validarFormulario);
+/* const abrirModal1 = document.querySelector(`.abrirmodal`);
+const modal1 = document.querySelector(`.modal1`);
+const cerrarModal1 = document.querySelector(`.modal__close`)
 
-    let consulta = [];
-    localStorage.setItem("consulta", JSON.stringify(consulta))
+abrirModal1.addEventListener(`click`, () => {
+    e.preventDefault();
+    modal1.classList.add(`modal--show`)
+});
 
-    function validarFormulario(e) {
-        e.preventDefault();
-        let nombre = document.getElementById("nombreyapellido").value;
-        let telefono = document.getElementById("telefono").value;
-        let email = document.getElementById("email").value;
-        let consultas = document.getElementById("comentarios").value;
+cerrarModal1.addEventListener(`click`, () => {
+    e.preventDefault();
+    modal1.classList.remove(`modal--show`)
+}); */
 
-        let datos = (new registroConsultas (nombre, telefono, email, consultas));
-        consulta.push(datos);
-    };
+let formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", validarFormulario);
 
-        validarFormulario (consulta);
+let consulta = [];
+localStorage.setItem("consulta", JSON.stringify(consulta))
 
-    function registro() {
-        for (const registroConsultas of consulta) {
-            // console.log(registroConsultas);
-            registro(registroConsultas);
-        }
+class registroConsulta {
+    constructor (nombre, apellido, edad, teléfono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.telefono = teléfono;
     }
+}
 
-    function guardar() {
-        let consulta = registro ();
-        registro (consulta);
-    } 
-    guardar ();
+function validarFormulario(e) {
+    e.preventDefault();
+    let nombre = document.getElementById("nombreyapellido").value;
+    let telefono = document.getElementById("telefono").value;
+    let email = document.getElementById("email").value;
+    let consultas = document.getElementById("comentarios").value;
 
-    let formulario1 = document.getElementById("formulario1");
-    formulario1.addEventListener("submit", validarFormulario1);
+    let datos = (new registroConsulta (nombre, telefono, email, consultas));
+    consulta.push(datos);
+};
 
-    let consulta1 = [];
-    localStorage.setItem("consulta", JSON.stringify(consulta1))
+let btn = document.getElementById("enviar");
 
-    function validarFormulario1(e) {
-        e.preventDefault();
-        let nombre = document.getElementById("nombreyapellido").value;
-        let telefono = document.getElementById("telefono").value;
-        let email = document.getElementById("email").value;
-        let consultas = document.getElementById("comentarios").value;
+btn.addEventListener("click", () => {
+    Swal.fire({
+        title: "Muchas gracias!",
+        text: "Tu consulta ha sido enviada",
+        icon: "success",
+        confirmButtonText: "Salir",
+    })
+})
 
-        let datos = (new registroConsulta1 (nombre, telefono, email, consultas));
-        consulta.push(datos);
-    };
+let formulario1 = document.getElementById("formulario1");
+formulario1.addEventListener("submit", validarFormulario1);
 
-        validarFormulario1 (consulta);
+let consulta1 = [];
+localStorage.setItem("consulta", JSON.stringify(consulta1))
 
-    function registroConsulta1() {
-        for (const registroConsultas of consulta) {
-            // console.log(registroConsultas);
-            registroConsulta1(registroConsultas);
-        }
+class registroConsulta1 {
+    constructor (nombre, apellido, edad, teléfono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.telefono = teléfono;
     }
+}
 
-    function guardar() {
-        let consulta = registro ();
-        registro (consulta);
-    } 
-    guardar ();
+function validarFormulario1(e) {
+    e.preventDefault();
+    let nombre = document.getElementById("nombreyapellido").value;
+    let telefono = document.getElementById("telefono").value;
+    let email = document.getElementById("email").value;
+    let consultas = document.getElementById("comentarios").value;
 
+    let datos = (new registroConsulta1 (nombre, telefono, email, consultas));
+    consulta.push(datos);
+};
+
+let btn1 = document.getElementById("enviar1");
+
+btn1.addEventListener("click", () => {
+    Swal.fire({
+        title: "Genial!",
+        text: "Estaremos en contacto!",
+        icon: "success",
+        confirmButtonText: "Salir",
+    })
+})
+
+
+
+/*  localStorage.setItem("carrito", JSON.stringify([{nombre: "camisa", precio: 1000}]))
+
+let carrito;
+
+let carritoStorage = JSON.parse(localStorage.getItem("carrito"));
+
+if(carritoStorage){
+    carrito = carritoStorage;
+}else{
+    carrito = [];
+}  */
+
+//LA NUEVA FORMA MAS FACIL, lo mismo pero mas corto
+
+
+localStorage.setItem("Entrenamiento", JSON.stringify([{tipo: "Personalizado", precio: 5500}]))
+
+let cotizacion = JSON.parse(localStorage.getItem("Entrenamiento")) || [];
+console.log(cotizacion);
 
 
 
