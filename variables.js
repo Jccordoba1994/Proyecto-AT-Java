@@ -1,24 +1,3 @@
-/* // Ingreso consultas
-let Usuario = prompt ("Ingrese su nombre");
-
-while (!Usuario) { 
-    Usuario = prompt ("No ingreso un nombre valido, intente nuevamente")
-}
-
-let sexualidad =  prompt ("Ingrese su Sexo: M (Masculino), F (Femenino) o NB (No binario)").toLowerCase();
-
-while (sexualidad !== "m" && sexualidad !== "f" && sexualidad !== "nb") {
-    sexualidad = prompt ("No ingreso una letra válida, intente nuevamente: ")
-}
-
-if (sexualidad == "m") {
-    alert ("Bienvenido " + Usuario + " a AT sports Training, acontinuación cotizaremos tu entrenamiento");
-} else if (sexualidad == "f") {
-    alert ("Bienvenida " + Usuario + " a AT sports Training, acontinuación cotizaremos tu entrenamiento");
-} else {
-    alert ("Bienvenide " + Usuario + " a AT sports Training, acontinuación cotizaremos tu entrenamiento");
-}
-
 
 class Clientes {
     constructor (nombre, apellido, edad, teléfono) {
@@ -46,27 +25,22 @@ function registroClientes() {
 }
 registroClientes (cliente);
 
-function registro() {
-    for (const Clientes of cliente) {
-        console.log(Clientes);
-    }
-}
-registro(Clientes);
-
-function guardar() {
-    let cliente = registro ();
-    registro (cliente);
-} 
-guardar ();
-
 const tipoPrecio = [
-    {tipo: "personalizado", precio: 5000},
-    {tipo: "dos personas", precio: 4500},
-    {tipo: "tres personas", precio: 4000},
-    {tipo: "grupal", precio: 3500},
+    {tipo: "personalizado", días: 1, precio: 3500},
+    {tipo: "personalizado", días: 2, precio: 5000},
+    {tipo: "personalizado", días: 3, precio: 6500},
+    {tipo: "dos personas", días: 1, precio: 3000},
+    {tipo: "dos personas", días: 2, precio: 4500},
+    {tipo: "dos personas", días: 3, precio: 5500},
+    {tipo: "tres personas", días: 1, precio: 2700},
+    {tipo: "tres personas", días: 2, precio: 4000},
+    {tipo: "tres personas", días: 3, precio: 5000},
+    {tipo: "grupal", días: 1, precio: 2500},
+    {tipo: "grupal", días: 2, precio: 3500},
+    {tipo: "grupal", días: 3, precio: 4500},
 ];
 
-let clase = prompt ("¿Su entrenamiento sera? Personalizado, Dos personas, Tres personas o grupal (4 o + personas)").toLowerCase ();
+/*let clase = prompt ("¿Su entrenamiento sera? Personalizado, Dos personas, Tres personas o grupal (4 o + personas)").toLowerCase ();
 
 while (clase !== "personalizado" && clase !== "dos personas" && clase !== "tres personas" && clase !== "grupal").toLowerCase () {
     clase = prompt ("No ingreso un texto valido, intente nuevamente, Personalizado, Dos personas, Tres personas o grupal (4 o + personas): ")

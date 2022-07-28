@@ -428,6 +428,10 @@ main .modal1, main .modal2, main .modal3, main .modal4 {
   transition: opacity .6s;
 }
 
+main .form-group1 {
+  margin-top: 0px;
+}
+
 main .modal--show1, main .modal--show2, main .modal--show3, main .modal--show4 {
   opacity: 1;
   pointer-events: unset;
@@ -441,7 +445,7 @@ main .modal__container {
   max-width: 600px;
   max-height: 90%;
   border-radius: 6px;
-  padding: 50px 40px;
+  padding: 30px 40px;
   background-color: white;
   display: -ms-grid;
   display: grid;
@@ -453,11 +457,13 @@ main .modal__container {
 main .modal__tittle {
   font-size: 35px;
   color: black;
+  margin-bottom: 5px;
 }
 
 main .modal__img {
   width: 90%;
-  max-width: 300px;
+  max-width: 200px;
+  height: 200px;
 }
 
 main .modal__close1, main .modal__close2, main .modal__close3, main .modal__close4 {

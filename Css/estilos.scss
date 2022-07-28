@@ -398,6 +398,10 @@ main{
         transition: opacity .6s;
     }
 
+    .form-group1 {
+        margin-top: 0px;
+    }
+
     .modal2 {
         @extend .modal1;
     }
@@ -434,7 +438,7 @@ main{
         max-width: 600px;
         max-height: 90%;
         border-radius: 6px;
-        padding: 50px 40px;
+        padding: 30px 40px;
         background-color: white;
         display: grid;
         gap: 16px;
@@ -445,11 +449,13 @@ main{
     .modal__tittle {
         font-size: 35px;
         color: black;
+        margin-bottom: 5px;
     }
 
     .modal__img {
         width: 90%;
-        max-width: 300px;
+        max-width: 200px;
+        height: 200px;
     }
 
     .modal__close1{
