@@ -59,6 +59,7 @@ main .titulo1 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 25px;
   color: white;
   background-color: #326b32;
@@ -449,7 +450,7 @@ main .modal__container {
   background-color: white;
   display: -ms-grid;
   display: grid;
-  gap: 16px;
+  gap: 5px;
   place-items: center;
   grid-auto-columns: 100%;
 }
@@ -457,7 +458,7 @@ main .modal__container {
 main .modal__tittle {
   font-size: 35px;
   color: black;
-  margin-bottom: 5px;
+  margin-bottom: 0px !important;
 }
 
 main .modal__img {
@@ -679,26 +680,12 @@ main .mapa {
 }
 
 main .fondocontact {
+  width: auto;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   text-transform: uppercase;
-}
-
-main .consulta {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 25px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#326b32));
-  background-image: linear-gradient(to top, white, gray, #326b32);
-}
-
-main .trabajanosotros {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 25px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(gray), to(#326b32));
-  background-image: linear-gradient(to top, white, gray, #326b32);
 }
 
 footer .foter {

@@ -85,6 +85,7 @@ main{
         text-align: center;
         text-transform: uppercase;
         margin-top: 10px;
+        margin-bottom: 20px;
         font-size: 25px;
         color: $color4;
         background-color: $color1;
@@ -441,7 +442,7 @@ main{
         padding: 30px 40px;
         background-color: white;
         display: grid;
-        gap: 16px;
+        gap: 5px;
         place-items: center;
         grid-auto-columns: 100%;
     }
@@ -449,7 +450,7 @@ main{
     .modal__tittle {
         font-size: 35px;
         color: black;
-        margin-bottom: 5px;
+        margin-bottom: 0px !important;
     }
 
     .modal__img {
@@ -675,25 +676,12 @@ main{
     }
 
     .fondocontact {
+        width: auto;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 10px;
+        margin-right: auto;
+        margin-left: auto;
         text-align: center;
         text-transform: uppercase;
-    }
-    
-    .consulta {
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 25px;
-        background-image: linear-gradient(to top, $color4, $color3, $color1);
-    }
-    
-    
-    .trabajanosotros{
-        margin-top: 20px;
-        padding: 10px;
-        font-size: 25px;
-        background-image: linear-gradient(to top, $color4, $color3, $color1);
     }
 }
 

@@ -109,12 +109,11 @@
     <!-- navbar fin -->  
     <main>
         <h1 class="titulo1">Contacto</h1>
-        <!-- formulario contacto -->
+        <!-- formulario -->
         <section class="fondocontact">
             <div class="contacto container-fluid">
                 <div class="contacto-fila row">
                     <div class="col-sm-12 col-md-6">
-                        <h2 class="consulta">consultas</h2>
                         <form action="/action_page.php" id="formulario">
                             <div class="form-group">
                                 <label for="Nombre y Apellido"></label>
@@ -128,6 +127,8 @@
                                 <label for="email"></label>
                                 <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required>
                             </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
                             <div class="form-group">
                                 <textarea class="form-control" id="comentarios" rows="10" placeholder="Ingrese su consulta" required></textarea>
                             </div>
@@ -137,32 +138,6 @@
                                 </label>
                             </div>
                             <button type="reset" class="btn btn-primary">Borrar</button> <button type="submit" id="enviar" class="btn btn-primary" value="">Enviar</button>
-                        </form>
-                    </div>
-                    <!-- formulario trabaja con nosotros -->
-                    <div class="col-sm-12 col-md-6">
-                        <h2 class="trabajanosotros">Trabaja con Nosotros</h2>
-                        <form action="/action_page.php" id="formulario1" method="get">
-                            <div class="form-group">
-                                <label for="Nombre y Apellido"></label>
-                                <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombreyapellido" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono"></label>
-                                <input type="number" class="form-control" placeholder="Teléfono" id="telefono" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"></label>
-                                <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="comentarios" rows="10" placeholder="Contanos sobre vos" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="cv">carga tu cv</label>
-                                <input type="file" class="form-control-file" id="cv">
-                            </div>
-                            <button type="reset" class="btn btn-primary">Borrar</button> <button type="submit" id="enviar1" class="btn btn-primary" value="">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -207,6 +182,6 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="../variables.js"></script>
+    <script src="../Variables/Varcontacto.js"></script>
 </body>
 </html>
