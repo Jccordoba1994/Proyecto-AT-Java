@@ -51,48 +51,71 @@ cerrarModal4.addEventListener(`click`, (e) => {
     modal4.classList.remove(`modal--show4`)
 });
 
-class Clientes {
-    constructor (nombre, apellido, edad, teléfono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.telefono = teléfono;
-    }
-}
-
-let numero = parseInt (prompt ("ingrese cantidad de alumnos"));
-
-let cliente = [] ;
-
-function registroClientes() {
-    for (let i = 0; i < numero ; i++) {
-        let nombre = prompt ("Cliente " + (i+1) + " de " + numero + ". Ingrese su nombre");
-        let apellido = prompt ("Ahora su apellido");
-        let edad = parseInt (prompt("Tu edad"));
-        let telefono = parseInt (prompt("Un teléfono por favor"));
-    
-        let datos = (new Clientes (nombre, apellido, edad, telefono));
-        cliente.push(datos);
-    }
-}
-registroClientes (cliente);
 
 const tipoPrecio = [
-    {tipo: "personalizado", días: 1, precio: 3500},
-    {tipo: "personalizado", días: 2, precio: 5000},
-    {tipo: "personalizado", días: 3, precio: 6500},
-    {tipo: "dos personas", días: 1, precio: 3000},
-    {tipo: "dos personas", días: 2, precio: 4500},
-    {tipo: "dos personas", días: 3, precio: 5500},
-    {tipo: "tres personas", días: 1, precio: 2700},
-    {tipo: "tres personas", días: 2, precio: 4000},
-    {tipo: "tres personas", días: 3, precio: 5000},
-    {tipo: "grupal", días: 1, precio: 2500},
-    {tipo: "grupal", días: 2, precio: 3500},
-    {tipo: "grupal", días: 3, precio: 4500},
+    {personas: 1, dias: 1, valor: 3500},
+    {personas: 1, dias: 2, valor: 5000},
+    {personas: 1, dias: 3, valor: 6500},
+    {personas: 2, dias: 1, valor: 3000},
+    {personas: 2, dias: 2, valor: 4500},
+    {personas: 2, dias: 3, valor: 5500},
+    {personas: 3, dias: 1, valor: 2700},
+    {personas: 3, dias: 2, valor: 4000},
+    {personas: 3, dias: 3, valor: 5000},
+    {personas: 4, dias: 1, valor: 2500},
+    {personas: 4, dias: 2, valor: 3500},
+    {personas: 4, dias: 3, valor: 4500},
 ];
 
-/* localStorage.setItem("Entrenamiento", JSON.stringify([{tipo: "Personalizado", precio: 5500}]))
 
-let cotizacion = JSON.parse(localStorage.getItem("Entrenamiento")) || [];
-console.log(cotizacion); */
+let alumnos = document.getElementById("numeroalumnos")
+let dias = document.getElementById("numerodias")
+
+let boton = document.getElementById("cotizar");
+
+/* function cotizacion (alumnos, dias) {
+    for (const precio of tipoPrecio) {
+        if (precio.personas === alumnos.value && precio.dias === dias.value) {
+            return precio.valor
+        }
+    }
+} */
+
+/* function cotización(alumnos, dias) {
+    arrayObjeto.find(elemento) => {
+        return 
+    }
+    
+}
+
+boton.addEventListener("click", (e) => {
+    e.preventDefault ();
+    alert (cotizacion(alumnos.value, dias.value))
+}) */
+
+const lista = document.getElementById("lista");
+
+const traerDatos = async () => {
+try {
+    const resp = await fetch("../Datos.json");
+    const data = await resp.json();
+
+    data.forEach((post) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <h2>${producto.personas}</h2>
+            <p>${producto.dias}</p>
+            <p>codigo${producto.valor}</p>
+            <hr/>
+        `;
+
+        lista.append(li);
+    });
+} catch (error) {
+    const mensaje = document.createElement("div");
+    mensaje.innerHTML = `Error al cargar la información ${error}`;
+    document.body.append(mensaje);
+}
+};
+
+traerDatos();
