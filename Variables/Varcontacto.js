@@ -1,44 +1,4 @@
 
-/*let clase = prompt ("¿Su entrenamiento sera? Personalizado, Dos personas, Tres personas o grupal (4 o + personas)").toLowerCase ();
-
-while (clase !== "personalizado" && clase !== "dos personas" && clase !== "tres personas" && clase !== "grupal").toLowerCase () {
-    clase = prompt ("No ingreso un texto valido, intente nuevamente, Personalizado, Dos personas, Tres personas o grupal (4 o + personas): ")
-}
-
-function cotizacion(clase) {
-    let busqueda = tipoPrecio.find (elemento => elemento.tipo === clase);
-    alert (`El entrenamiento ${clase} cuesta: ${busqueda.precio}  al mes, entrenando dos veces a la semana.`);
-}
-cotizacion (clase);
-
-let consulta = prompt ("¿Le interesa otra cotización? (SI / NO)").toLowerCase();
-
-function dudas (consulta) {
-    if (consulta == "si") {
-        clase = prompt ("¿Su entrenamiento sera? Personalizado, Dos personas, Tres personas o grupal (4 o + personas)").toLowerCase ();
-        
-        while (clase !== "personalizado" && clase !== "dos personas" && clase !== "tres personas" && clase !== "grupal") {
-            clase = prompt ("No ingreso un texto valido, intente nuevamente, Personalizado, Dos personas, Tres personas o grupal (4 o + personas): ")
-        }
-        
-        cotizacion (clase);
-        consulta = prompt ("¿Le interesa otra cotización? (SI / NO)")
-        dudas (consulta);
-    } else {
-        let reconsulta = prompt ("¿Alguna otra consulta? (SI / NO)").toLowerCase();
-
-        if (reconsulta == "si") {
-            let  = parseInt (prompt ("Ingrese su consulta"));
-            alert ("Muchas gracias por visitarnos, Familia AT Sports");
-        } else {
-            alert ("Muchas gracias por visitarnos, Familia AT Sports");
-        }
-    } 
-}
-dudas (consulta); */
-
-
-
 let formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", validarFormulario);
 

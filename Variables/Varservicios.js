@@ -20,7 +20,7 @@ cerrarModal1.addEventListener(`click`, (e) => {
     e.preventDefault();
     modal1.classList.remove(`modal--show1`)
 });
-
+/* 
 abrirModal2.addEventListener (`click`, (e) => {
     e.preventDefault();
     modal2.classList.add(`modal--show2`);
@@ -49,7 +49,7 @@ abrirmodal4.addEventListener (`click`, (e) => {
 cerrarModal4.addEventListener(`click`, (e) => {
     e.preventDefault();
     modal4.classList.remove(`modal--show4`)
-});
+}); */
 
 
 const tipoPrecio = [
@@ -68,54 +68,44 @@ const tipoPrecio = [
 ];
 
 
-let alumnos = document.getElementById("numeroalumnos")
-let dias = document.getElementById("numerodias")
+let alumnos = document.getElementById("numeroalumnos").value;
+let dias = document.getElementById("numerodias").value;
 
 let boton = document.getElementById("cotizar");
 
-/* function cotizacion (alumnos, dias) {
-    for (const precio of tipoPrecio) {
-        if (precio.personas === alumnos.value && precio.dias === dias.value) {
-            return precio.valor
-        }
-    }
-} */
-
-/* function cotización(alumnos, dias) {
-    arrayObjeto.find(elemento) => {
-        return 
-    }
-    
-}
-
 boton.addEventListener("click", (e) => {
     e.preventDefault ();
-    alert (cotizacion(alumnos.value, dias.value))
-}) */
-
-const lista = document.getElementById("lista");
-
-const traerDatos = async () => {
-try {
-    const resp = await fetch("../Datos.json");
-    const data = await resp.json();
-
-    data.forEach((post) => {
-        const li = document.createElement("li");
-        li.innerHTML = `
-            <h2>${producto.personas}</h2>
-            <p>${producto.dias}</p>
-            <p>codigo${producto.valor}</p>
-            <hr/>
-        `;
-
-        lista.append(li);
+    let precios= tipoPrecio.find(elemento => {
+        return elemento.personas === `${alumnos}` && elemento.dias === `${dias}`;
     });
-} catch (error) {
-    const mensaje = document.createElement("div");
-    mensaje.innerHTML = `Error al cargar la información ${error}`;
-    document.body.append(mensaje);
-}
+    alert (precios.valor)
+});
+
+// `${alumnos}` `${dias}`
+
+/* const lista = document.getElementById("lista");
+
+const traerDatos = async () => { 
+    try {
+        const resp = await fetch("../Datos.json");
+        const data = await resp.json();
+
+        data.forEach((post) => {
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <h2>${producto.personas}</h2>
+                <p>${producto.dias}</p>
+                <p>codigo${producto.valor}</p>
+                <hr/>
+            `;
+
+            lista.append(li);
+        });
+    } catch (error) {
+        const mensaje = document.createElement("div");
+        mensaje.innerHTML = `Error al cargar la información ${error}`;
+        document.body.append(mensaje);
+    }
 };
 
-traerDatos();
+traerDatos(); */
