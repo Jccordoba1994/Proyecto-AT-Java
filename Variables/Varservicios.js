@@ -20,7 +20,7 @@ cerrarModal1.addEventListener(`click`, (e) => {
     e.preventDefault();
     modal1.classList.remove(`modal--show1`)
 });
-/* 
+
 abrirModal2.addEventListener (`click`, (e) => {
     e.preventDefault();
     modal2.classList.add(`modal--show2`);
@@ -49,7 +49,7 @@ abrirmodal4.addEventListener (`click`, (e) => {
 cerrarModal4.addEventListener(`click`, (e) => {
     e.preventDefault();
     modal4.classList.remove(`modal--show4`)
-}); */
+});
 
 
 const tipoPrecio = [
@@ -81,9 +81,7 @@ boton.addEventListener("click", (e) => {
     alert (precios.valor)
 });
 
-// `${alumnos}` `${dias}`
-
-/* const lista = document.getElementById("lista");
+const lista = document.getElementById("lista");
 
 const traerDatos = async () => { 
     try {
@@ -108,4 +106,4 @@ const traerDatos = async () => {
     }
 };
 
-traerDatos(); */
+traerDatos();
